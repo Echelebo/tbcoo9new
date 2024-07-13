@@ -20,8 +20,8 @@
   text-align: center;
   padding: 7px 16px;
   text-decoration: none;
-  background-color: #065B9E;
-  border-radius: 20%;
+  background-color: #0382D1;
+  border-radius: 30%;
 }
 
 /* Change the link color to #111 (black) on hover */
