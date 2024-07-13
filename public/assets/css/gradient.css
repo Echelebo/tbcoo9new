@@ -1160,16 +1160,16 @@ textarea:-webkit-autofill:active {
 
     50% {
         transform: scale(1.2);
-        
+
     }
 
     100% {
         transform: scale(1);
-        
+
     }
 }
 
 .animated-image {
     animation: growAnimation 3s infinite;
-   
+
 }

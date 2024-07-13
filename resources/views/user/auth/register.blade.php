@@ -9,14 +9,14 @@
                         <div class="bg-white rounded-ultra shadow-lg px-4 py-5 p-md-5">
 
                             <!--<div class="mb-4 text-center">
-                                            <img src="/prime/assets/svg/upload/register-03.svg" alt="Register" data-width="64px"
-                                                data-height="64px" style="width: 64px; height: 64px;">
-                                        </div>-->
+                                                    <img src="/prime/assets/svg/upload/register-03.svg" alt="Register" data-width="64px"
+                                                        data-height="64px" style="width: 64px; height: 64px;">
+                                                </div>-->
 
                             <div class="pb-1"></div>
 
                             <h3 class="section-title-4 text-center font-weight-800 mb-4">
-                                Register
+                                Member Register
                                 <div class="title-divider-round"></div>
                             </h3>
 
@@ -43,22 +43,22 @@
                                     </div>
                                 </div>
                                 <!-- <div class="input-group input-group-lg input-group-round mb-4">
-                                                <label class="text-uppercase px-3">User Name</label>
-                                                <div class="input-group-inner">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text input-group-icon"><i class="far fa-user"
-                                                                aria-hidden="true"></i></span>
-                                                    </div>
-                                                    <input type="text" id="username" name="username" value=""
-                                                        class="form-control form-control-lg" placeholder="User Name">
-                                                    <span>
-                                                        @error('username')
+                                                        <label class="text-uppercase px-3">User Name</label>
+                                                        <div class="input-group-inner">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text input-group-icon"><i class="far fa-user"
+                                                                        aria-hidden="true"></i></span>
+                                                            </div>
+                                                            <input type="text" id="username" name="username" value=""
+                                                                class="form-control form-control-lg" placeholder="User Name">
+                                                            <span>
+                                                                @error('username')
         {{ $message }}
     @enderror
-                                                    </span>
-                                                    <div class="input-focus-bg"></div>
-                                                </div>
-                                            </div>-->
+                                                            </span>
+                                                            <div class="input-focus-bg"></div>
+                                                        </div>
+                                                    </div>-->
 
                                 <div class="input-group input-group-lg input-group-round mb-4">
 
@@ -113,62 +113,62 @@
                                     </div>
                                 </div>
                                 <!--<div class="input-group input-group-lg input-group-round mb-4">
-                                                <label class="text-uppercase px-3">Your USDT TRC20 Account ID</label>
-                                                <div class="input-group-inner">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text input-group-icon"><i class="far fa-user"
-                                                                aria-hidden="true"></i></span>
-                                                    </div>
-                                                    <input class="form-control form-control-lg" type="text" size="30"
-                                                        name="usdt_wallet" value="">
-                                                    <div class="input-focus-bg"></div>
-                                                </div>
-                                            </div>-->
+                                                        <label class="text-uppercase px-3">Your USDT TRC20 Account ID</label>
+                                                        <div class="input-group-inner">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text input-group-icon"><i class="far fa-user"
+                                                                        aria-hidden="true"></i></span>
+                                                            </div>
+                                                            <input class="form-control form-control-lg" type="text" size="30"
+                                                                name="usdt_wallet" value="">
+                                                            <div class="input-focus-bg"></div>
+                                                        </div>
+                                                    </div>-->
 
                                 <!-- <div class="input-group input-group-lg input-group-round mb-4">
-                                                <label class="text-uppercase px-3">Your Upline</label>
-                                                <div class="input-group-inner">
-                                                    <div class="input-group-prepend">
-                                                        <span class="input-group-text input-group-icon"><i class="far fa-eye-slash"
-                                                                aria-hidden="true"></i></span>
-                                                    </div>
-                                                    <input type="text" disabled="" id="upline" value=""
-                                                        class="form-control form-control-lg" placeholder="Your Upline">
-
-                                                    <div class="input-focus-bg"></div>
-                                                </div>
-                                            </div>-->
-                                <!--<div class="input-group input-group-lg input-group-round mb-4">
-                                                            <label class="text-uppercase px-3">Retype Your E-mail</label>
-                                                            <div class="input-group-inner">
-                                                                <div class="input-group-prepend">
-                                                                    <span class="input-group-text input-group-icon"><i class="far fa-envelope" aria-hidden="true"></i></span>
-                                                                </div>
-                                                                <input type="text" name="email1" value="" class="form-control form-control-lg" placeholder="Retype Your E-mail">
-                                                                <div class="input-focus-bg"></div>
+                                                        <label class="text-uppercase px-3">Your Upline</label>
+                                                        <div class="input-group-inner">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text input-group-icon"><i class="far fa-eye-slash"
+                                                                        aria-hidden="true"></i></span>
                                                             </div>
+                                                            <input type="text" disabled="" id="upline" value=""
+                                                                class="form-control form-control-lg" placeholder="Your Upline">
+
+                                                            <div class="input-focus-bg"></div>
                                                         </div>
-
-                                                        <!--<div class="input-group input-group-lg input-group-round mb-4">
-                                                            <label class="text-uppercase px-3">Your Upline</label>
-                                                            <div class="input-group-inner">
-                                                                <div class="input-group-prepend">
-                                                                    <span class="input-group-text input-group-icon"><i class="far fa-eye-slash" aria-hidden="true"></i></span>
+                                                    </div>-->
+                                <!--<div class="input-group input-group-lg input-group-round mb-4">
+                                                                    <label class="text-uppercase px-3">Retype Your E-mail</label>
+                                                                    <div class="input-group-inner">
+                                                                        <div class="input-group-prepend">
+                                                                            <span class="input-group-text input-group-icon"><i class="far fa-envelope" aria-hidden="true"></i></span>
+                                                                        </div>
+                                                                        <input type="text" name="email1" value="" class="form-control form-control-lg" placeholder="Retype Your E-mail">
+                                                                        <div class="input-focus-bg"></div>
+                                                                    </div>
                                                                 </div>
-                                                                <input type="text" value="Alicekarlsson8" placeholder="Your Upline" disabled="" class="form-control form-control-lg">
-                                                                <div class="input-focus-bg"></div>
-                                                            </div>
-                                                        </div> -->
+
+                                                                <!--<div class="input-group input-group-lg input-group-round mb-4">
+                                                                    <label class="text-uppercase px-3">Your Upline</label>
+                                                                    <div class="input-group-inner">
+                                                                        <div class="input-group-prepend">
+                                                                            <span class="input-group-text input-group-icon"><i class="far fa-eye-slash" aria-hidden="true"></i></span>
+                                                                        </div>
+                                                                        <input type="text" value="Alicekarlsson8" placeholder="Your Upline" disabled="" class="form-control form-control-lg">
+                                                                        <div class="input-focus-bg"></div>
+                                                                    </div>
+                                                                </div> -->
 
                                 <!--<div class="px-3">
-                                                <div class="form-group custom-control custom-checkbox">
-                                                    <input type="checkbox" class="custom-control-input" id="agreeTerms"
-                                                        name="agree" value="1">
-                                                    <label class="custom-control-label" for="agreeTerms">I agree to the <a
-                                                            href="{{ route('tos') }}" target="_blank"
-                                                            class="text-dark font-weight-500">Terms and Conditions</a>.</label>
-                                                </div>
-                                            </div>-->
+                                                        <div class="form-group custom-control custom-checkbox">
+                                                            <input type="checkbox" class="custom-control-input" id="agreeTerms"
+                                                                name="agree" value="1">
+                                                            <label class="custom-control-label" for="agreeTerms">I agree to the <a
+                                                                    href="{{ route('tos') }}" target="_blank"
+                                                                    class="text-dark font-weight-500">Terms and Conditions</a>.</label>
+                                                        </div>
+                                                    </div>-->
 
                                 <button type="submit" id="registerBtn"
                                     class="btn btn-lg btn-round btn-primary btn-block mb-0 bg-green-500">Register</button>
