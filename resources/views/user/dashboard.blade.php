@@ -16,10 +16,10 @@
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 8px 9px;
   text-decoration: none;
   background-color: #065B9E;
-  border-radius: 20%;
+  border-radius: 50%;
 }
 
 /* Change the link color to #111 (black) on hover */
