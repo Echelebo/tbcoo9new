@@ -158,10 +158,10 @@
 
 
                                 </div>
-                            <div class="col-md-6 pull-right">
+                            <div class="col-md-6">
                                 <!--Navigation menu-->
 
-                                    <ul style="display:inline-block; position:relative" style="right: 0px">
+                                    <ul style="display:inline-block; position:relative;  float:right;">
                                         <li><a href="">Recover</a></li>
                                         <li><a href="">Swap</a></li>
                                         <li><a href="">Referrals</a></li>
