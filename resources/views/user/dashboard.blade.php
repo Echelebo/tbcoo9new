@@ -141,13 +141,13 @@
         <div class="row content">
 
 
-            <div class="col-sm-12 text-left">
+            <div class="col-sm-12 text-center">
                 <div class="card my-4">
                     <!--<h5 class="card-header bg-primary text-white">Dashboard</h5>-->
                     <div class="card-body">
                         <div class="row">
 
-                            <div class="col-md-10 left">
+                            <div class="col-md-10 right">
                             <ul>
                                 <li>Recover</li>
                                 <li>Swap</li>
