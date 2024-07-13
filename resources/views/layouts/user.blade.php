@@ -15,7 +15,7 @@
     <link href="/prime/1/assets/css/icons.min.css" rel="stylesheet" type="text/css">
     <!-- App Css-->
     <link href="/prime/1/assets/css/app-dark.min.css" rel="stylesheet" type="text/css">
-    
+
     <link rel="stylesheet" href="{{ asset('assets/css/gradient.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     {{-- material icon cdn --}}
@@ -32,8 +32,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-        
-        
+
+
     <style>
         .goog-te-gadget .goog-te-combo {
             margin: 4px 0 !important;
@@ -745,8 +745,9 @@
 </head>
 
 
-<body data-new-gr-c-s-check-loaded="14.1160.0" data-gr-ext-installed=""
-    style="position: relative; min-height: 100%; top: 0px;">
+<body class="bg-image bg-fixed" data-img-src="/prime/images/forbanner.jpg" data-new-gr-c-s-check-loaded="14.1159.0"
+data-gr-ext-installed=""
+style="background-image: url(&quot;/prime/images/forbanner.jpg&quot;); position: relative; min-height: 100%; top: 0px;">
 
     <!-- <body data-layout="horizontal" data-topbar="colored"> -->
 
@@ -756,28 +757,28 @@
 
         <header id="page-topbar">
             <div class="navbar-header">
-                <div class="d-flex">
-                    <!-- LOGO -->
+                <!--<div class="d-flex">
+                     LOGO
 
 
-                    <button type="button"
+                   <button type="button"
                         class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
                         <i class="fa fa-fw fa-bars" aria-hidden="true"></i>
-                    </button>
+                </button>
 
-                </div>
+                </div>-->
 
-                <div class="d-flex">
+                <!--<div class="d-flex">
 
                     <a href="{{route('home')}}"><img width="150px" src="{{ asset('assets/images/' . site('logo_rec')) }}" alt="Header Avatar"></a>
 
-                </div>
+                </div>-->
             </div>
         </header>
         <!-- ========== Left Sidebar Start ========== -->
-        <div class="vertical-menu">
+       <!-- <div class="vertical-menu">
 
-            <!-- LOGO -->
+             LOGO
             <div class="navbar-brand-box px-10 py-2 mt-2">
                 <a href="{{route('home')}}" class="logo logo-dark">
                     <span class="logo-sm">
@@ -812,9 +813,9 @@
                             <div class="simplebar-content-wrapper" style="height: auto; overflow: hidden;">
                                 <div class="simplebar-content" style="padding: 0px;">
 
-                                    <!--- Sidemenu -->
+                                 Sidemenu
                                     <div id="sidebar-menu">
-                                        <!-- Left Menu Start -->
+                                         Left Menu Start
                                         <ul class="metismenu list-unstyled" id="side-menu">
                                             <li class="menu-title">Menu</li>
 
@@ -905,7 +906,7 @@
 
                                         </ul>
                                     </div>
-                                    <!-- Sidebar -->
+                                     Sidebar
                                 </div>
                             </div>
                         </div>
@@ -921,23 +922,23 @@
                         style="transform: translate3d(0px, 0px, 0px); display: none; height: 465px;"></div>
                 </div>
             </div>
-        </div>
-        
+        </div>-->
+
         <div class="main-content">
 
             <div class="page-content">
-                
-                
-                
+
+
+
                 <!-- Content Start -->
-        
+
         @yield('contents')
-            
-            
-            
+
+
+
             <!-- Content end -->
-            
-            
+
+
             <br><br>
                 <br>
 
@@ -962,6 +963,7 @@
             <!-- end main content-->
 
         </div>
+    </div>
         <!-- END layout-wrapper -->
 
         <!-- JAVASCRIPT -->
@@ -9333,8 +9335,8 @@ function googleTranslateElementInit() {
 
 
     </div>
-    
-    
+
+
     {{-- all script placements --}}
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
@@ -9408,7 +9410,7 @@ function googleTranslateElementInit() {
                             @csrf
                             <button type="submit" class="mt-5 bg-red-500 text-white px-2 py-1 rounded-full text-xs hover:scale-110 transition-all uppercase" type="submit">Yes,  Logout</button>
                         </form>
-                        
+
                     </div>
                 </div>
                 `;
@@ -9430,17 +9432,16 @@ function googleTranslateElementInit() {
 
     {{-- livechat --}}
     {!! json_decode(site('livechat')) !!}
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
 </body>
 
 </html>
-            
-            
-            
-            
-            
+
+
+
+
