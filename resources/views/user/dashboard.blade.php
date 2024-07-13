@@ -171,7 +171,7 @@ li a:hover {
 
 
             <div class="col-sm-12">
-                <div class="card my-4">
+                <div class="card my-4" style="background-color:#fff; color:#131111">
                     <!--<h5 class="card-header bg-primary text-white">Dashboard</h5>-->
                     <div class="card-body">
 

@@ -891,7 +891,7 @@ style="background-image: url(&quot;/prime/images/forbanner.jpg&quot;); position:
                                                     <span>Promotional Tools</span>
                                                 </a>
 
-                                            </li>-->
+                                            </li>
 
                                             <li>
                                                 <a role="button"
@@ -901,7 +901,7 @@ style="background-image: url(&quot;/prime/images/forbanner.jpg&quot;); position:
                                                 </a>
 
                                             </li>
-                                          <!--  <li id="google_translate_element"></li>
+                                            <li id="google_translate_element"></li>
 
                                         </ul>
                                     </div>
