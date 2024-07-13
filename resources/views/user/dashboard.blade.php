@@ -158,7 +158,7 @@
 
 
                                 </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 pull-right">
                                 <!--Navigation menu-->
 
                                     <ul style="display:inline-block; position:relative">
@@ -179,7 +179,7 @@
 
                         </div>
                         <div class="row">
-                            <div class="col-md-12">
+                            <div class="col-md-12 text-center">
                                 <p>Balance: {{ formatAmount(user()->balance) }} TBC</p>
                                 <br />
                                 <p>qrcode here</p><br />
