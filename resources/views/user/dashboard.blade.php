@@ -10,16 +10,18 @@
   li {
 
     float: right;
+    margin-left: 10px;
+    margin-top: 10px;
   }
 
   li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 7px 8px;
+  padding: 8px 6px;
   text-decoration: none;
   background-color: #065B9E;
-  border-radius: 30%;
+  border-radius: 20%;
 }
 
 /* Change the link color to #111 (black) on hover */
