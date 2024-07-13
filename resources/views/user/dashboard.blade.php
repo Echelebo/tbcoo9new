@@ -190,7 +190,7 @@ li a:hover {
                             <div class="col-md-6">
                                 <!--Navigation menu-->
 
-                                    <ul style="display:inline-block; position:relative;  float:right;">
+                                    <ul>
                                         <li><a href="">Recover</a></li>
                                         <li><a href="">Swap</a></li>
                                         <li><a href="">Referrals</a></li>
