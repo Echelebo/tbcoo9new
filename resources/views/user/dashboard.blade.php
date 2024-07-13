@@ -178,7 +178,7 @@
 
 
                         </div>
-                        <div class="row mt-4">
+                        <div class="row mt-8">
                             <div class="col-md-12 text-center">
                                 <p>Balance: {{ formatAmount(user()->balance) }} TBC</p>
                                 <br />
