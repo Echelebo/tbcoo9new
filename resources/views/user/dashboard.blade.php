@@ -204,7 +204,7 @@ li a:hover {
                                             <span>Referrals</span></a></li>
                                         <li><a href=""><i class="fa fa-search" aria-hidden="true"></i>
                                             <span>Explorer</span></a></li>
-                                        <li><a href=""><i class="fas fa-sign-in" aria-hidden="true"></i>
+                                        <li><a href=""><i class="fas fa-sign-in-alt" aria-hidden="true"></i>
                                             <span>Logout</span></a></li>
 
 
