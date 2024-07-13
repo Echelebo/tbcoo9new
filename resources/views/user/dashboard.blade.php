@@ -18,12 +18,12 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  background-color: #033766;
+  background-color: #065B9E;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+  background-color: #08548f;
 }
 
 
@@ -177,7 +177,7 @@ li a:hover {
 
                         <div class="row">
                             <div class="col-md-3 col-sm-3" style="padding-left: 20px">
-                                <h2><font color="#111" size="3"><b>Hello, {{ user()->name }}</b>({{ user()->email }})</font></h2>
+                                <h2><font color="#111" size="4"><b>Hello, {{ user()->name }}</b>({{ user()->email }})</font></h2>
                                 <br />
                                 <select class="form-control form-control-lg">
                                     <option>Kringle</option>
@@ -188,7 +188,7 @@ li a:hover {
 
                                 </div><div class="col-md-3">
                                 </div>
-                            <div class="col-md-6">
+                            <div class="col-md-6 py-4">
                                 <!--Navigation menu-->
 
                                     <ul>
