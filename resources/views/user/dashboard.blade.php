@@ -20,7 +20,7 @@
   text-align: center;
   padding: 7px 16px;
   text-decoration: none;
-  background-color: #0382D1;
+  background-color: #455ebd;
   border-radius: 40%;
 }
 
@@ -196,11 +196,16 @@ li a:hover {
                                 <!--Navigation menu-->
 
                                     <ul>
-                                        <li><a href="">Recover</a></li>
-                                        <li><a href="">Swap</a></li>
-                                        <li><a href="">Referrals</a></li>
-                                        <li><a href="">Explorer</a></li>
-                                        <li><a href="">Logout</a></li>
+                                        <li><a href=""><i class="fas fa-download" aria-hidden="true"></i>
+                                            <span>Recover</span></a></li>
+                                        <li><a href=""><i class="fas fa-upload" aria-hidden="true"></i>
+                                            <span>Swap</span></a></li>
+                                        <li><a href=""><i class="fas fa-bullhorn" aria-hidden="true"></i>
+                                            <span>Referrals</span></a></li>
+                                        <li><a href=""><i class="fa fa-search" aria-hidden="true"></i>
+                                            <span>Explorer</span></a></li>
+                                        <li><a href=""><i class="fas fa-sign-in" aria-hidden="true"></i>
+                                            <span>Logout</span></a></li>
 
 
                                     </ul>
