@@ -141,15 +141,26 @@
         <div class="row content">
 
 
-            <div class="col-sm-12 text-center">
+            <div class="col-sm-12">
                 <div class="card my-4">
                     <!--<h5 class="card-header bg-primary text-white">Dashboard</h5>-->
                     <div class="card-body">
 
-                        <div class="container">
-                            <div class="">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Hello, {{ user()->name }}({{ user()->email }})</p>
+                                <br />
+                                <select>
+                                    <option>Kringle</option>
+                                    <option>TBC</option>
+                                    <option>USD</option>
+                                </select>
+
+
+                                </div>
+                            <div class="col-md-6">
                                 <!--Navigation menu-->
-                                <nav class="">
+
                                     <ul style="display:inline-block; position:relative">
                                         <li><a href="">Recover</a></li>
                                         <li><a href="">Swap</a></li>
@@ -159,23 +170,13 @@
 
 
                                     </ul>
-                                </nav>
-
-                            </div>
-                        </div>
-
-                        <div class="row">
-                        <div class="col-md-6">
-                            <p>Hello, {{ user()->name }}({{ user()->email }})</p>
-                            <br />
-                            <select>
-                                <option>Kringle</option>
-                                <option>TBC</option>
-                                <option>USD</option>
-                            </select>
 
 
                             </div>
+
+
+
+
                         </div>
                         <div class="row">
                             <div class="col-md-12">
