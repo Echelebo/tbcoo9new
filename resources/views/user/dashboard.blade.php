@@ -147,7 +147,7 @@
                     <div class="card-body">
 
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6" style="padding-left: 20px">
                                 <p>Hello, {{ user()->name }}({{ user()->email }})</p>
                                 <br />
                                 <select>
@@ -161,7 +161,7 @@
                             <div class="col-md-6 pull-right">
                                 <!--Navigation menu-->
 
-                                    <ul style="display:inline-block; position:relative">
+                                    <ul style="display:inline-block; position:relative" style="right: 0px">
                                         <li><a href="">Recover</a></li>
                                         <li><a href="">Swap</a></li>
                                         <li><a href="">Referrals</a></li>
@@ -178,7 +178,7 @@
 
 
                         </div>
-                        <div class="row">
+                        <div class="row mt-4">
                             <div class="col-md-12 text-center">
                                 <p>Balance: {{ formatAmount(user()->balance) }} TBC</p>
                                 <br />
