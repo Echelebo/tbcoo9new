@@ -21,7 +21,7 @@
   padding: 5px 7px;
   text-decoration: none;
   background-color: #3d55b6;
-  border-radius: 10%;
+  border-radius: 15%;
 }
 
 /* Change the link color to #111 (black) on hover */
@@ -217,7 +217,7 @@ li a:hover {
 
 
                         </div>
-                        <div class="row mt-8">
+                        <div class="row mt-12">
                             <div class="col-md-12 text-center">
                                 <p>Balance: {{ formatAmount(user()->balance) }} TBC</p>
                                 <br />
