@@ -20,7 +20,7 @@
   text-align: center;
   padding: 7px 16px;
   text-decoration: none;
-  background-color: #455ebd;
+  background-color: #3d55b6;
   border-radius: 15%;
 }
 
