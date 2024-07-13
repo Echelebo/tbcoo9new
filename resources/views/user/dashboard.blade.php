@@ -21,7 +21,7 @@
   padding: 7px 16px;
   text-decoration: none;
   background-color: #455ebd;
-  border-radius: 40%;
+  border-radius: 15%;
 }
 
 /* Change the link color to #111 (black) on hover */
