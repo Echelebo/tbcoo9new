@@ -219,10 +219,10 @@ li a:hover {
                         </div>
                         <div class="row mt-12">
                             <div class="col-md-12 text-center">
-                                <p>Balance {{ user()->balance }} TBC</p>
+                                <p><font size="5">Balance {{ user()->balance }} TBC</font></p>
                                 <br />
                                 <p>qrcode here</p><br />
-                                <p>Wallet Address</p>
+                                <p style="background-color:darkgrey; color: #111010;"><font size="5">Wallet Address</font></p>
                                 </div>
 
                             </div>
