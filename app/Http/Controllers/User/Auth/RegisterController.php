@@ -13,7 +13,7 @@ class RegisterController extends Controller
     //registration
     public function register()
     {
-        $page_title = 'Sign Up';
+        $page_title = 'Reghister';
         //put the referral in session
         if (!session()->get('referred_by')) {
             session()->put('referred_by', request()->ref);
@@ -39,8 +39,7 @@ class RegisterController extends Controller
 
         $request->validate([
             'email' => 'required|email|max:255|unique:users',
-            'name' => 'required|two_words',
-            'username' => 'required|unique:users|min:3|max:10',
+            'name' => 'required',
             'password' => [
                 'required',
                 'confirmed',
@@ -61,8 +60,6 @@ class RegisterController extends Controller
             ],
         ], [
             'email.unique' => 'This email is already in use',
-            'username.unique' => 'This username is already in use',
-            'name.two_words' => 'Name must contain two words',
         ]);
 
 
@@ -74,8 +71,6 @@ class RegisterController extends Controller
             'email' => $request->email,
             'password' => $request->password,
             'name' => $request->name,
-            'username' => $request->username,
-            'usdt_wallet' => $request->usdt_wallet,
         ];
 
         session()->put('register_data', $register_data);
@@ -129,14 +124,12 @@ class RegisterController extends Controller
         if (session()->get('referred_by')) {
             $ref = User::where('username', session()->get('referred_by'))->first();
         }
-        
+
         $pass = $register_data['password'];
         //create new user instance
         $user = new User();
         $user->email = $register_data['email'];
         $user->name = $register_data['name'];
-        $user->username = $register_data['username'];
-        $user->usdt_wallet = $register_data['usdt_wallet'];
         $user->password = Hash::make($register_data['password']);
         $user->email_verified_at = site('email_v') == 1 ? now() : null;
         $user->referred_by = $ref->username ?? null;

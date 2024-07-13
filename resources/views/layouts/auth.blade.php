@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-    
+
+
     <link rel="apple-touch-icon" href="{{ asset('assets/images/' . site('favicon')) }}">
     <link rel="icon" href="{{ asset('assets/images/' . site('favicon')) }}">
     <title>{{ $page_title }} | {{ site('name') }}</title>
@@ -18,11 +18,11 @@
 
     <!-- Fancybox CSS -->
     <link rel="stylesheet" href="/prime/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.css">
-    
+
     <!-- OWL carousel CSS -->
     <link rel="stylesheet" href="/prime/node_modules/owl.carousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="/prime/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
-    
+
     <!-- Main CSS -->
     <link rel="stylesheet" href="/prime/assets/css/style.min.css">
 
@@ -31,7 +31,7 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i&amp;subset=latin-ext" rel="stylesheet">
 
 <link type="text/css" rel="stylesheet" charset="UTF-8" href="https://www.gstatic.com/_/translate_http/_/ss/k=translate_http.tr.qhDXWpKopYk.L.W.O/am=wA/d=0/rs=AN8SPfq5gedF4FIOWZgYyMCNZA5tU966ig/m=el_main_css"><script type="text/javascript" charset="UTF-8" src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_GB.fBJ3ykjzuHQ.O/am=AAQ/d=1/exm=el_conf/ed=1/rs=AN8SPfqHlX9xSzIx7TGypPV6FRAoMTbXdA/m=el_main"></script>
-    
+
     <link rel="stylesheet" href="{{ asset('assets/css/gradient.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     {{-- material icon cdn --}}
@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.min.css">
 
 </head>
-<body class="bg-image bg-fixed" data-img-src="/prime/assets/images/upload/access-page-bg-01.jpg" data-new-gr-c-s-check-loaded="14.1159.0" data-gr-ext-installed="" style="background-image: url(&quot;/prime/assets/images/upload/access-page-bg-01.jpg&quot;); position: relative; min-height: 100%; top: 0px;">
+<body class="bg-image bg-fixed" data-img-src="/prime/images/forbanner.jpg" data-new-gr-c-s-check-loaded="14.1159.0" data-gr-ext-installed="" style="background-image: url(&quot;/prime/images/forbanner.jpg&quot;); position: relative; min-height: 100%; top: 0px;">
 
     <!-- Preloader -->
     <div class="preloader-container">
@@ -68,7 +68,7 @@
 
                     <div class="col-md-6">
                         <div class="text-center text-md-right px-4">
-                            <a href="{{route('home')}}" class="text-light font-weight-600 text-uppercase"><i class="fas fa-angle-left mr-2" aria-hidden="true"></i>Go to main</a>
+                            <a href="{{route('user.login')}}" class="text-light font-weight-600 text-uppercase"><i class="fas fa-angle-left mr-2" aria-hidden="true"></i>Go to main</a>
                         </div>
                     </div>
 
@@ -90,7 +90,7 @@
 
         </div>
     </div>
-    
+
     <!-- jQuery -->
     <script src="/prime/assets/js/vendor/jquery-3.5.1.min.js"></script>
 
@@ -106,17 +106,17 @@
 
     <!-- Fancybox js -->
     <script src="/prime/node_modules/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
-    
+
     <!-- OWL carousel js -->
     <script src="/prime/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
-    
+
     <!-- Progress Circle js -->
     <script src="/prime/node_modules/jquery-circle-progress/dist/circle-progress.min.js"></script>
 
     <!-- Custom js -->
     <script src="/prime/assets/js/custom.js"></script>
        <script src="https://kit.fontawesome.com/6a961feafa.js" crossorigin="anonymous"></script>
-       
+
        <style media="all" id="fa-v4-font-face">
             /*!
  * Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com
@@ -8459,7 +8459,7 @@
                 font-weight: 900
             }
         </style>
-       
+
 <!-- Custom js -->
 
         <script src="/prime/assets/js/custom.js"></script>
@@ -8472,7 +8472,7 @@ function googleTranslateElementInit() {
 
 <script type="text/javascript" src="/prime/translate.google.com/translate_a/elementa0d8.js?cb=googleTranslateElementInit"></script>
 
-        
+
 {{-- all script placements --}}
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     {{-- Include SweetAlert2 JavaScript file --}}
@@ -8496,7 +8496,7 @@ function googleTranslateElementInit() {
 
 
     </div>
-    
+
 </body>
 
 </html>

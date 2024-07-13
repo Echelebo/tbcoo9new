@@ -2,112 +2,125 @@
 
 @section('contents')
     <div class="col-12">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-3">
-                            <div class="px-xl-4">
-                                <div class="bg-white rounded-ultra shadow-lg px-4 py-5 p-md-5">
-                                
-                                    <div class="mb-4 text-center">
-                                        <img src="/prime/assets/svg/upload/login-03.svg" alt="Login" data-width="64px" data-height="64px" style="width: 64px; height: 64px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                    <div class="px-xl-4">
+                        <div class="bg-white rounded-ultra shadow-lg px-4 py-5 p-md-5">
+
+                            <!--<div class="mb-4 text-center">
+                                                <img src="/prime/assets/svg/upload/login-03.svg" alt="Login" data-width="64px" data-height="64px" style="width: 64px; height: 64px;">
+                                            </div>-->
+
+                            <div class="pb-1"></div>
+
+                            <h3 class="section-title-4 text-center font-weight-800 mb-4">
+                                Member Login
+                                <div class="title-divider-round"></div>
+                            </h3>
+
+
+
+                            <form method="post" action="{{ route('user.login-validate') }}"
+                                class="@if (user()) hidden @endif" id="loginForm">
+                                @csrf
+
+                                <div class="input-group input-group-lg input-group-round mb-4">
+
+                                    <div class="input-group-inner">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text input-group-icon"><i class="far fa-user"
+                                                    aria-hidden="true"></i></span>
+                                        </div>
+                                        <input type="text" name="email" id="email" value=""
+                                            class="form-control form-control-lg" placeholder="Email">
+                                        <span>
+                                            @error('email')
+                                                {{ $message }}
+                                            @enderror
+                                        </span>
+                                        <div class="input-focus-bg"></div>
                                     </div>
-    
-                                    <div class="pb-1"></div>
-    
-                                    <h3 class="section-title-4 text-center font-weight-800 mb-4">
-                                        User Login
-                                        <div class="title-divider-round"></div>
-                                    </h3>
+                                </div>
+
+                                <div class="input-group input-group-lg input-group-round mb-4">
+                                    <div class="d-flex w-100 justify-content-between">
+
+                                        <label class="px-3">
+                                            <a href="{{ route('user.forgot-password.index') }}" class="text-reset">Forgot
+                                                password?</a>
+                                        </label>
+                                    </div>
+                                    <div class="input-group-inner">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text input-group-icon"><i class="far fa-eye-slash"
+                                                    aria-hidden="true"></i></span>
+                                        </div>
+                                        <input type="password" name="password" id="password" value=""
+                                            class="form-control form-control-lg" placeholder="Password">
+                                        <span>
+                                            @error('password')
+                                                {{ $message }}
+                                            @enderror
+                                        </span>
+                                        <div class="input-focus-bg"></div>
+                                    </div>
+                                </div>
+
+                                <div data-height="5px" style="height: 5px;"></div>
+                                <button type="submit" id="loginBtn"
+                                    class="btn btn-lg btn-round btn-primary btn-block mb-0 bg-green-500"><i
+                                        class="fas fa-sign-in-alt" aria-hidden="true"></i>Login</button>
+
+                                <div class="mt-4 px-2 font-semibold lg:px-10">
+                                    <a href="{{ route('user.register') }}" class="hover:text-blue-700">Don't have account?
+                                        Register</a>
+                                </div>
+                            </form>
 
 
- 
-<form method="post" action="{{ route('user.login-validate') }}" class="@if (user()) hidden @endif" id="loginForm">
-    @csrf
-    
-                                        <div class="input-group input-group-lg input-group-round mb-4">
-                                            <label class="text-uppercase px-3">Username</label>
-                                            <div class="input-group-inner">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text input-group-icon"><i class="far fa-user" aria-hidden="true"></i></span>
-                                                </div>
-                                                <input type="text" name="email" id="email" value="" class="form-control form-control-lg" placeholder="Username">
-                                                <span>
-                    @error('email')
-                        {{ $message }}
-                    @enderror
-                </span>
-                                                <div class="input-focus-bg"></div>
-                                            </div>
+
+
+                            <form method="post" action="{{ route('user.login-verify') }}"
+                                class="@if (!user()) hidden @endif" id="verifyForm">
+                                @csrf
+
+                                <div class="input-group input-group-lg input-group-round mb-4">
+
+                                    <div class="input-group-inner">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text input-group-icon"><i class="far fa-user"
+                                                    aria-hidden="true"></i></span>
                                         </div>
-    
-                                        <div class="input-group input-group-lg input-group-round mb-4">
-                                            <div class="d-flex w-100 justify-content-between">
-                                                <label class="text-uppercase px-3">Password</label>
-                                                <label class="px-3">
-                                                    <a href="{{ route('user.forgot-password.index') }}" class="text-reset">Forgot password?</a>
-                                                </label>
-                                            </div>
-                                            <div class="input-group-inner">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text input-group-icon"><i class="far fa-eye-slash" aria-hidden="true"></i></span>
-                                                </div>
-                                                <input type="password" name="password" id="password" value="" class="form-control form-control-lg" placeholder="Password">
-                                                <span>
-                    @error('password')
-                        {{ $message }}
-                    @enderror
-                </span>
-                                                <div class="input-focus-bg"></div>
-                                            </div>
-                                        </div>
-                                      
-                                        <div data-height="5px" style="height: 5px;"></div>
-                                         <button type="submit" id="loginBtn" class="btn btn-lg btn-round btn-primary btn-block mb-0 bg-blue-500"><i class="fas fa-sign-in-alt" aria-hidden="true"></i>Sign in</button>
-                                         
-                                         <div class="mt-4 px-2 font-semibold lg:px-10">
-                <a href="{{ route('user.register') }}" class="hover:text-blue-700">Don't have account? Register</a>
-            </div>
-                                       </form>
-                                       
-                                       
-                                       
-                                       
-                                       <form method="post" action="{{ route('user.login-verify') }}" class="@if (!user()) hidden @endif" id="verifyForm">
-    @csrf
-    
-                                        <div class="input-group input-group-lg input-group-round mb-4">
-                                            <label class="text-uppercase px-3">OTP</label>
-                                            <div class="input-group-inner">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text input-group-icon"><i class="far fa-user" aria-hidden="true"></i></span>
-                                                </div>
-                                                <input type="number" name="otp" id="otp" value="" class="form-control form-control-lg" placeholder="OTP" required
-                    maxlength="6">
-                                                <span>
-                    @error('otp')
-                        {{ $message }}
-                    @enderror
-                </span>
-                                                <div class="input-focus-bg"></div>
-                                            </div>
-                                        </div>
-    
-                                      
-                                        <div data-height="5px" style="height: 5px;"></div>
-                                         <button type="submit" id="verifyBtn" class="btn btn-lg btn-round btn-primary btn-block mb-0 bg-blue-500"><i class="fas fa-sign-in-alt" aria-hidden="true"></i>Verify</button>
-                                         
-                                         <div class="mt-4 px-2 font-semibold lg:px-10">
-                <button type="button" class="hover:text-blue-700" id="resendBtn">Resend OTP</button>
-            </div>
-                                         
-                                         
-                                       </form>
-                                         </div>
-                            </div>
+                                        <input type="number" name="otp" id="otp" value=""
+                                            class="form-control form-control-lg" placeholder="OTP" required maxlength="6">
+                                        <span>
+                                            @error('otp')
+                                                {{ $message }}
+                                            @enderror
+                                        </span>
+                                        <div class="input-focus-bg"></div>
+                                    </div>
+                                </div>
+
+
+                                <div data-height="5px" style="height: 5px;"></div>
+                                <button type="submit" id="verifyBtn"
+                                    class="btn btn-lg btn-round btn-primary btn-block mb-0 bg-green-500"><i
+                                        class="fas fa-sign-in-alt" aria-hidden="true"></i>Verify</button>
+
+                                <div class="mt-4 px-2 font-semibold lg:px-10">
+                                    <button type="button" class="hover:text-blue-700" id="resendBtn">Resend OTP</button>
+                                </div>
+
+
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 @endsection
 
 @section('scripts')

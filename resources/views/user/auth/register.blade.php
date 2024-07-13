@@ -2,221 +2,247 @@
 
 @section('contents')
     <div class="col-12">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-3">
-                            <div class="px-xl-4">
-                                <div class="bg-white rounded-ultra shadow-lg px-4 py-5 p-md-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-3">
+                    <div class="px-xl-4">
+                        <div class="bg-white rounded-ultra shadow-lg px-4 py-5 p-md-5">
 
-                                    <div class="mb-4 text-center">
-                                        <img src="/prime/assets/svg/upload/register-03.svg" alt="Register" data-width="64px" data-height="64px" style="width: 64px; height: 64px;">
-                                    </div>
+                            <!--<div class="mb-4 text-center">
+                                        <img src="/prime/assets/svg/upload/register-03.svg" alt="Register" data-width="64px"
+                                            data-height="64px" style="width: 64px; height: 64px;">
+                                    </div>-->
 
-                                    <div class="pb-1"></div>
+                            <div class="pb-1"></div>
 
-                                    <h3 class="section-title-4 text-center font-weight-800 mb-4">
-                                        Register
-                                        <div class="title-divider-round"></div>
-                                    </h3>
- 
- 
-  
-<form method="post" action="{{ route('user.register-validate') }}" id="registerForm">
-    @csrf
+                            <h3 class="section-title-4 text-center font-weight-800 mb-4">
+                                Register
+                                <div class="title-divider-round"></div>
+                            </h3>
 
-    
-                                        <div class="input-group input-group-lg input-group-round mb-4">
-                                            <label class="text-uppercase px-3">Your Full Name</label>
-                                            <div class="input-group-inner">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text input-group-icon"><i class="far fa-user" aria-hidden="true"></i></span>
-                                                </div>
-                                                <input type="text" id="name" name="name" value="" class="form-control form-control-lg" placeholder="Your Full Name">
-                                                <span>
-                    @error('name')
-                        {{ $message }}
-                    @enderror
-                </span>
-                                                <div class="input-focus-bg"></div>
-                                            </div>
+
+
+                            <form method="post" action="{{ route('user.register-validate') }}" id="registerForm">
+                                @csrf
+
+
+                                <div class="input-group input-group-lg input-group-round mb-4">
+                                    <div class="input-group-inner">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text input-group-icon"><i class="far fa-user"
+                                                    aria-hidden="true"></i></span>
                                         </div>
-                                        <div class="input-group input-group-lg input-group-round mb-4">
+                                        <input type="text" id="name" name="name" value=""
+                                            class="form-control form-control-lg" placeholder="Name">
+                                        <span>
+                                            @error('name')
+                                                {{ $message }}
+                                            @enderror
+                                        </span>
+                                        <div class="input-focus-bg"></div>
+                                    </div>
+                                </div>
+                                <!-- <div class="input-group input-group-lg input-group-round mb-4">
                                             <label class="text-uppercase px-3">User Name</label>
                                             <div class="input-group-inner">
                                                 <div class="input-group-prepend">
-                                                    <span class="input-group-text input-group-icon"><i class="far fa-user" aria-hidden="true"></i></span>
+                                                    <span class="input-group-text input-group-icon"><i class="far fa-user"
+                                                            aria-hidden="true"></i></span>
                                                 </div>
-                                                <input type="text" id="username" name="username" value="" class="form-control form-control-lg" placeholder="User Name">
+                                                <input type="text" id="username" name="username" value=""
+                                                    class="form-control form-control-lg" placeholder="User Name">
                                                 <span>
-                    @error('username')
-                        {{ $message }}
-                    @enderror
-                </span>
+                                                    @error('username')
+        {{ $message }}
+    @enderror
+                                                </span>
                                                 <div class="input-focus-bg"></div>
                                             </div>
+                                        </div>-->
+
+                                <div class="input-group input-group-lg input-group-round mb-4">
+
+                                    <div class="input-group-inner">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text input-group-icon"><i class="far fa-envelope"
+                                                    aria-hidden="true"></i></span>
                                         </div>
-                                         <div class="input-group input-group-lg input-group-round mb-4">
-                                            <label class="text-uppercase px-3">Password</label>
-                                            <div class="input-group-inner">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text input-group-icon"><i class="far fa-eye-slash" aria-hidden="true"></i></span>
-                                                </div>
-                                                <input id="password" type="password" name="password" value="" class="form-control form-control-lg" placeholder="Password">
-                                                <span>
-                    @error('password')
-                        {{ $message }}
-                    @enderror
-                </span>
-                                                <div class="input-focus-bg"></div>
-                                            </div>
+                                        <input type="text" id="email" name="email" value=""
+                                            class="form-control form-control-lg" placeholder="Email">
+                                        <span>
+                                            @error('email')
+                                                {{ $message }}
+                                            @enderror
+                                        </span>
+                                        <div class="input-focus-bg"></div>
+                                    </div>
+                                </div>
+                                <div class="input-group input-group-lg input-group-round mb-4">
+
+                                    <div class="input-group-inner">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text input-group-icon"><i class="far fa-lock"
+                                                    aria-hidden="true"></i></span>
                                         </div>
-                                         <div class="input-group input-group-lg input-group-round mb-4">
-                                            <label class="text-uppercase px-3">Retype Password</label>
-                                            <div class="input-group-inner">
-                                                <div class="input-group-prepend">
-                                                     <span class="input-group-text input-group-icon"><i class="far fa-eye-slash" aria-hidden="true"></i></span>
-                                                </div>
-                                                <input id="confirm-password" type="password" name="password_confirmation" value="" class="form-control form-control-lg" placeholder="Retype Password">
-                                                <span>
-                    @error('password-confirmation')
-                        {{ $message }}
-                    @enderror
-                </span>
-                                                <div class="input-focus-bg"></div>
-                                            </div>
+                                        <input id="password" type="password" name="password" value=""
+                                            class="form-control form-control-lg" placeholder="Password">
+                                        <span>
+                                            @error('password')
+                                                {{ $message }}
+                                            @enderror
+                                        </span>
+                                        <div class="input-focus-bg"></div>
+                                    </div>
+                                </div>
+                                <div class="input-group input-group-lg input-group-round mb-4">
+
+                                    <div class="input-group-inner">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text input-group-icon"><i class="far fa-eye-slash"
+                                                    aria-hidden="true"></i></span>
                                         </div>
-                                                                                                                                                                                                                <div class="input-group input-group-lg input-group-round mb-4">
+                                        <input id="confirm-password" type="password" name="password_confirmation"
+                                            value="" class="form-control form-control-lg"
+                                            placeholder="Confirm password">
+                                        <span>
+                                            @error('password-confirmation')
+                                                {{ $message }}
+                                            @enderror
+                                        </span>
+                                        <div class="input-focus-bg"></div>
+                                    </div>
+                                </div>
+                                <!--<div class="input-group input-group-lg input-group-round mb-4">
                                             <label class="text-uppercase px-3">Your USDT TRC20 Account ID</label>
                                             <div class="input-group-inner">
                                                 <div class="input-group-prepend">
-                                                   <span class="input-group-text input-group-icon"><i class="far fa-user" aria-hidden="true"></i></span>
+                                                    <span class="input-group-text input-group-icon"><i class="far fa-user"
+                                                            aria-hidden="true"></i></span>
                                                 </div>
-                                                <input class="form-control form-control-lg" type="text" size="30" name="usdt_wallet" value="">
+                                                <input class="form-control form-control-lg" type="text" size="30"
+                                                    name="usdt_wallet" value="">
                                                 <div class="input-focus-bg"></div>
                                             </div>
-                                        </div>
-                                                                                                                            <div class="input-group input-group-lg input-group-round mb-4">
-                                            <label class="text-uppercase px-3">Your E-mail Address</label>
-                                            <div class="input-group-inner">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text input-group-icon"><i class="far fa-envelope" aria-hidden="true"></i></span>
-                                                </div>
-                                                <input type="text" id="email" name="email" value="" class="form-control form-control-lg" placeholder="Email address">
-                                                <span>
-                    @error('email')
-                        {{ $message }}
-                    @enderror
-                </span>
-                                                <div class="input-focus-bg"></div>
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="input-group input-group-lg input-group-round mb-4">
-                                            <label class="text-uppercase px-3">Your Upline</label>
-                                            <div class="input-group-inner">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text input-group-icon"><i class="far fa-eye-slash" aria-hidden="true"></i></span>
-                                                </div>
-                                                <input type="text" disabled="" id="upline" value="" class="form-control form-control-lg" placeholder="Your Upline">
-                                                
-                                                <div class="input-focus-bg"></div>
-                                            </div>
-                                        </div>
-                                         <!--<div class="input-group input-group-lg input-group-round mb-4">
-                                            <label class="text-uppercase px-3">Retype Your E-mail</label>
-                                            <div class="input-group-inner">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text input-group-icon"><i class="far fa-envelope" aria-hidden="true"></i></span>
-                                                </div>
-                                                <input type="text" name="email1" value="" class="form-control form-control-lg" placeholder="Retype Your E-mail">
-                                                <div class="input-focus-bg"></div>
-                                            </div>
-                                        </div>
-    
-                                        <!--<div class="input-group input-group-lg input-group-round mb-4">
-                                            <label class="text-uppercase px-3">Your Upline</label>
-                                            <div class="input-group-inner">
-                                                <div class="input-group-prepend">
-                                                    <span class="input-group-text input-group-icon"><i class="far fa-eye-slash" aria-hidden="true"></i></span>
-                                                </div>
-                                                <input type="text" value="Alicekarlsson8" placeholder="Your Upline" disabled="" class="form-control form-control-lg">
-                                                <div class="input-focus-bg"></div>
-                                            </div>
-                                        </div> -->
-                                          
-                                        <div class="px-3">
-                                            <div class="form-group custom-control custom-checkbox">
-                                                <input type="checkbox" class="custom-control-input" id="agreeTerms" name="agree" value="1">
-                                                <label class="custom-control-label" for="agreeTerms">I agree to the <a href="{{route('tos')}}" target="_blank" class="text-dark font-weight-500">Terms and Conditions</a>.</label>
-                                            </div>
-                                        </div>
-    
-                                        <button type="submit" id="registerBtn" class="btn btn-lg btn-round btn-primary btn-block mb-0 bg-blue-500"><i class="fas fa-edit" aria-hidden="true"></i>Sign Up</button>
-                                        
-                                        <div class="mt-4 px-2 font-semibold lg:px-10">
-                <a href="{{ route('user.login') }}" class="hover:text-blue-700">Already have account? Login</a>
-            </div>
-                                    </form>
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    
-                                    <form method="post" action="{{ route('user.register-verify') }}" class="hidden" id="verifyForm">
-    @csrf
+                                        </div>-->
 
-    
-                                        <div class="input-group input-group-lg input-group-round mb-4">
-                                            <label class="text-uppercase px-3">OTP</label>
+                                <!-- <div class="input-group input-group-lg input-group-round mb-4">
+                                            <label class="text-uppercase px-3">Your Upline</label>
                                             <div class="input-group-inner">
                                                 <div class="input-group-prepend">
-                                                    <span class="input-group-text input-group-icon"><i class="far fa-eye-slash" aria-hidden="true"></i></span>
+                                                    <span class="input-group-text input-group-icon"><i class="far fa-eye-slash"
+                                                            aria-hidden="true"></i></span>
                                                 </div>
-                                                <input type="number" id="otp" name="otp" value="" class="form-control form-control-lg" placeholder="OTP" required
-                    maxlength="6">
-                                                <span>
-                    @error('name')
-                        {{ $message }}
-                    @enderror
-                </span>
+                                                <input type="text" disabled="" id="upline" value=""
+                                                    class="form-control form-control-lg" placeholder="Your Upline">
+
                                                 <div class="input-focus-bg"></div>
                                             </div>
+                                        </div>-->
+                                <!--<div class="input-group input-group-lg input-group-round mb-4">
+                                                        <label class="text-uppercase px-3">Retype Your E-mail</label>
+                                                        <div class="input-group-inner">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text input-group-icon"><i class="far fa-envelope" aria-hidden="true"></i></span>
+                                                            </div>
+                                                            <input type="text" name="email1" value="" class="form-control form-control-lg" placeholder="Retype Your E-mail">
+                                                            <div class="input-focus-bg"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <!--<div class="input-group input-group-lg input-group-round mb-4">
+                                                        <label class="text-uppercase px-3">Your Upline</label>
+                                                        <div class="input-group-inner">
+                                                            <div class="input-group-prepend">
+                                                                <span class="input-group-text input-group-icon"><i class="far fa-eye-slash" aria-hidden="true"></i></span>
+                                                            </div>
+                                                            <input type="text" value="Alicekarlsson8" placeholder="Your Upline" disabled="" class="form-control form-control-lg">
+                                                            <div class="input-focus-bg"></div>
+                                                        </div>
+                                                    </div> -->
+
+                                <!--<div class="px-3">
+                                            <div class="form-group custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="agreeTerms"
+                                                    name="agree" value="1">
+                                                <label class="custom-control-label" for="agreeTerms">I agree to the <a
+                                                        href="{{ route('tos') }}" target="_blank"
+                                                        class="text-dark font-weight-500">Terms and Conditions</a>.</label>
+                                            </div>
+                                        </div>-->
+
+                                <button type="submit" id="registerBtn"
+                                    class="btn btn-lg btn-round btn-primary btn-block mb-0 bg-green-500">Register</button>
+
+                                <div class="mt-4 px-2 font-semibold lg:px-10">
+                                    <a href="{{ route('user.login') }}" class="hover:text-blue-700">Already have account?
+                                        Login</a>
+                                </div>
+                            </form>
+
+
+
+
+
+
+
+
+
+                            <form method="post" action="{{ route('user.register-verify') }}" class="hidden"
+                                id="verifyForm">
+                                @csrf
+
+
+                                <div class="input-group input-group-lg input-group-round mb-4">
+
+                                    <div class="input-group-inner">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text input-group-icon"><i class="far fa-eye-slash"
+                                                    aria-hidden="true"></i></span>
                                         </div>
-                                        
-                                         
-                                         
-                                                                                                                                                                                                            
-                                                                                                                            
-                                         
-                                          
-                                        
-    
-                                        <button type="submit" id="verifyBtn" class="btn btn-lg btn-round btn-primary btn-block mb-0 bg-blue-500"><i class="fas fa-edit" aria-hidden="true"></i>Verify</button>
-                                        
-                                        <div class="mt-4 px-2 font-semibold lg:px-10">
-                <a href="{{ route('user.register') }}" class="hover:text-blue-700">Go Back</a>
-            </div>
-                                    </form>
-                                                                      </div>
-                            </div>
+                                        <input type="number" id="otp" name="otp" value=""
+                                            class="form-control form-control-lg" placeholder="OTP" required
+                                            maxlength="6">
+                                        <span>
+                                            @error('name')
+                                                {{ $message }}
+                                            @enderror
+                                        </span>
+                                        <div class="input-focus-bg"></div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+
+
+
+                                <button type="submit" id="verifyBtn"
+                                    class="btn btn-lg btn-round btn-primary btn-block mb-0 bg-green-500"><i
+                                        class="fas fa-edit" aria-hidden="true"></i>Verify</button>
+
+                                <div class="mt-4 px-2 font-semibold lg:px-10">
+                                    <a href="{{ route('user.register') }}" class="hover:text-blue-700">Go Back</a>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 @endsection
 
 @section('scripts')
- <script>
-      (function(){
-        const queryString = window.location.search;
-        const urlParams = new URLSearchParams(queryString);
-        const ref = urlParams.get('ref')
-        document.getElementById('upline').value = ref;
-      })();
+    <script>
+        (function() {
+            const queryString = window.location.search;
+            const urlParams = new URLSearchParams(queryString);
+            const ref = urlParams.get('ref')
+            document.getElementById('upline').value = ref;
+        })();
     </script>
 
     <script>
@@ -277,7 +303,7 @@
                             });
                         } else {
                             toastNotify('error', 'An error occured, please try again later');
-                            
+
                         }
 
 
@@ -336,7 +362,7 @@
                             });
                         } else {
                             toastNotify('error', 'An error occured, please try again later');
-                            
+
                         }
 
 

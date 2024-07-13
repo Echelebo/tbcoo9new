@@ -3372,7 +3372,7 @@ video {
     .md\:w-100-64 {
         width: calc(100% - 18.5rem);
     }
-    
+
     .md\:ml-64 {
         margin-left: 18.5rem;
     }
@@ -3572,7 +3572,7 @@ video {
     .md\:font-semibold {
         font-weight: 600;
     }
-    
+
     .md\:w-110 {
         width: 28rem;
     }
@@ -3638,6 +3638,7 @@ video {
     .lg\:w-96 {
         width: 24rem;
     }
+
     .lg\:w-190 {
         width: 45rem;
     }

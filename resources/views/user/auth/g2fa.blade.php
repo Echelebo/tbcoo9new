@@ -1,13 +1,9 @@
 @extends('layouts.auth')
 
 @section('contents')
-    
-
-
     {{-- verification form --}}
 
-    <form action="{{ route('user.g2fa.g2fa') }}" method="POST"
-        class="px-4 lg:px-10 mt-6 space-y-6" id="verifyForm">
+    <form action="{{ route('user.g2fa.g2fa') }}" method="POST" class="px-4 lg:px-10 mt-6 space-y-6" id="verifyForm">
         @csrf
 
         <div class="grid grid-cols-1">
@@ -29,7 +25,7 @@
 
         <div class="grid grid-cols-1 mt-3">
             <button type="submit" id="verifyBtn"
-                class="bg-blue-500 text-gray-300 text-xs font-semibold py-2 rounded ">Verify</button>
+                class="bg-green-500 text-gray-300 text-xs font-semibold py-2 rounded ">Verify</button>
         </div>
 
     </form>
@@ -38,7 +34,7 @@
 @section('scripts')
     <script>
         $(document).ready(function() {
-            
+
 
             //otp form
             $('#verifyForm').submit(function(e) {
@@ -125,6 +121,4 @@
 
         });
     </script>
-
-
 @endsection

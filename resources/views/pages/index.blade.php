@@ -2,53 +2,88 @@
     use App\Models\DepositCoin;
     use App\Models\Bot;
     use Faker\Factory as Faker;
-    
 
     $page_title = 'Home';
     $faker = Faker::create();
-    $logos = DepositCoin::inRandomOrder()
-        ->take(20)
-        ->get('logo_url');
-    
+    $logos = DepositCoin::inRandomOrder()->take(20)->get('logo_url');
+
     $bots = Bot::get();
-    
+
     $deposit_methods = ['usdttrc20'];
     $methods = DepositCoin::where('status', 1)->get();
     foreach ($methods as $method) {
         array_push($deposit_methods, $method->code);
     }
-    
+
     // Check if the count is less than 20
     while (count($deposit_methods) < 20) {
         $deposit_methods[] = 'usdttrc20';
     }
-    
-    $actions = ['deposited', 'withdrew', 'withdrew', 'deposited', 'withdrew', 'deposited', 'withdrew', 'withdrew', 'withdrew', 'withdrew', 'withdrew', 'withdrew'];
-    
-    $whys = ['Cutting-Edge Precision', 'Trendsetter Advantage', 'Adaptive Excellence', 'Seamless Profits', 'Data-Driven Triumph', 'Strategic Partner', 'Constant Success', 'Market Pioneer', 'Automated Mastery'];
-    $reviews = [
-        site('name') . "'s precision trading is a game-changer, consistently delivering impressive profits. I trust it for my financial success.",
-        'Effortless trading with ' . site('name') . '. Its adaptability and data-driven approach make it a standout choice. Highly recommended!',
-        'Seamless trades, constant profits - ' . site('name') . " simplifies trading. It's a must-have for anyone in the market.",
-        site('name') . "'s innovative strategies and consistent returns have transformed my trading experience. It's a valuable asset to any trader.",
-        'I rely on ' . site('name') . " for its adaptability in fluctuating markets. It's a proven partner in achieving financial goals.",
-        site('name') . "'s automated precision is remarkable. It's a powerful tool for navigating today's complex trading landscape.",
-        'Maximized profits with ' . site('name') . '. Its results speak volumes. A reliable and intelligent trading companion.',
-        'Trading with ' . site('name') . ' is effortless and rewarding. It adapts to market changes seamlessly. Truly impressive!',
-        site('name') . ' has changed my trading game. Its data-driven approach delivers consistent gains. An invaluable tool for success.',
-        'Effortless trading made possible by ' . site('name') . ' .  Its strategic prowess sets it apart. A game-changer for traders.',
+
+    $actions = [
+        'deposited',
+        'withdrew',
+        'withdrew',
+        'deposited',
+        'withdrew',
+        'deposited',
+        'withdrew',
+        'withdrew',
+        'withdrew',
+        'withdrew',
+        'withdrew',
+        'withdrew',
     ];
 
-    $short_description =  site('seo_description');
-    
+    $whys = [
+        'Cutting-Edge Precision',
+        'Trendsetter Advantage',
+        'Adaptive Excellence',
+        'Seamless Profits',
+        'Data-Driven Triumph',
+        'Strategic Partner',
+        'Constant Success',
+        'Market Pioneer',
+        'Automated Mastery',
+    ];
+    $reviews = [
+        site('name') .
+        "'s precision trading is a game-changer, consistently delivering impressive profits. I trust it for my financial success.",
+        'Effortless trading with ' .
+        site('name') .
+        '. Its adaptability and data-driven approach make it a standout choice. Highly recommended!',
+        'Seamless trades, constant profits - ' .
+        site('name') .
+        " simplifies trading. It's a must-have for anyone in the market.",
+        site('name') .
+        "'s innovative strategies and consistent returns have transformed my trading experience. It's a valuable asset to any trader.",
+        'I rely on ' .
+        site('name') .
+        " for its adaptability in fluctuating markets. It's a proven partner in achieving financial goals.",
+        site('name') .
+        "'s automated precision is remarkable. It's a powerful tool for navigating today's complex trading landscape.",
+        'Maximized profits with ' .
+        site('name') .
+        '. Its results speak volumes. A reliable and intelligent trading companion.',
+        'Trading with ' .
+        site('name') .
+        ' is effortless and rewarding. It adapts to market changes seamlessly. Truly impressive!',
+        site('name') .
+        ' has changed my trading game. Its data-driven approach delivers consistent gains. An invaluable tool for success.',
+        'Effortless trading made possible by ' .
+        site('name') .
+        ' .  Its strategic prowess sets it apart. A game-changer for traders.',
+    ];
+
+    $short_description = site('seo_description');
+
 @endphp
 
 @extends('layouts.front')
 
 
 @section('contents')
-
-<!-- Banner slides -->
+    <!-- Banner slides -->
     <div class="banner-slides-wrapper arrow-nav-overflow" data-dots="true" data-nav="true">
 
         <div class="banner-slides-container owl-carousel owl-theme owl-dot-light-1 owl-loaded">
@@ -83,11 +118,11 @@
                                                     deliver the message of sustainability for many of our clients.
                                                 </div>
                                                 <div class="slide-animate animated fadeIn" data-animated="fadeIn">
-                                                    <a href="{{route('user.login')}}"
+                                                    <a href="{{ route('user.login') }}"
                                                         class="btn btn-lg btn-round btn-secondary btn-gray-shadow mx-2">Login</a>
                                                 </div>
                                                 <div class="slide-animate animated fadeIn" data-animated="fadeIn">
-                                                    <a href="{{route('user.register')}}"
+                                                    <a href="{{ route('user.register') }}"
                                                         class="btn btn-lg btn-round btn-secondary btn-gray-shadow mx-2">Register</a>
                                                 </div>
                                             </div>
@@ -116,11 +151,11 @@
                                                     companies must embrace and integrate environmental, social and
                                                     economic considerations in all business decisions.</div>
                                                 <div class="slide-animate animated fadeIn" data-animated="fadeIn">
-                                                    <a href="{{route('user.login')}}"
+                                                    <a href="{{ route('user.login') }}"
                                                         class="btn btn-lg btn-round btn-secondary btn-gray-shadow mx-2">Login</a>
                                                 </div>
                                                 <div class="slide-animate animated fadeIn" data-animated="fadeIn">
-                                                    <a href="{{route('user.register')}}"
+                                                    <a href="{{ route('user.register') }}"
                                                         class="btn btn-lg btn-round btn-secondary btn-gray-shadow mx-2">Signup</a>
                                                 </div>
                                             </div>
@@ -149,11 +184,11 @@
                                                     deliver the message of sustainability for many of our clients.
                                                 </div>
                                                 <div class="slide-animate animated fadeIn" data-animated="fadeIn">
-                                                    <a href="{{route('user.login')}}"
+                                                    <a href="{{ route('user.login') }}"
                                                         class="btn btn-lg btn-round btn-secondary btn-gray-shadow mx-2">Login</a>
                                                 </div>
                                                 <div class="slide-animate animated fadeIn" data-animated="fadeIn">
-                                                    <a href="{{route('user.register')}}"
+                                                    <a href="{{ route('user.register') }}"
                                                         class="btn btn-lg btn-round btn-secondary btn-gray-shadow mx-2">Register</a>
                                                 </div>
                                             </div>
@@ -182,11 +217,11 @@
                                                     companies must embrace and integrate environmental, social and
                                                     economic considerations in all business decisions.</div>
                                                 <div class="slide-animate animated fadeIn" data-animated="fadeIn">
-                                                    <a href="{{route('user.login')}}"
+                                                    <a href="{{ route('user.login') }}"
                                                         class="btn btn-lg btn-round btn-secondary btn-gray-shadow mx-2">Login</a>
                                                 </div>
                                                 <div class="slide-animate animated fadeIn" data-animated="fadeIn">
-                                                    <a href="{{route('user.register')}}"
+                                                    <a href="{{ route('user.register') }}"
                                                         class="btn btn-lg btn-round btn-secondary btn-gray-shadow mx-2">Signup</a>
                                                 </div>
                                             </div>
@@ -215,11 +250,11 @@
                                                     deliver the message of sustainability for many of our clients.
                                                 </div>
                                                 <div class="slide-animate animated fadeIn" data-animated="fadeIn">
-                                                    <a href="{{route('user.login')}}"
+                                                    <a href="{{ route('user.login') }}"
                                                         class="btn btn-lg btn-round btn-secondary btn-gray-shadow mx-2">Login</a>
                                                 </div>
                                                 <div class="slide-animate animated fadeIn" data-animated="fadeIn">
-                                                    <a href="{{route('user.register')}}"
+                                                    <a href="{{ route('user.register') }}"
                                                         class="btn btn-lg btn-round btn-secondary btn-gray-shadow mx-2">Register</a>
                                                 </div>
                                             </div>
@@ -248,11 +283,11 @@
                                                     companies must embrace and integrate environmental, social and
                                                     economic considerations in all business decisions.</div>
                                                 <div class="slide-animate animated fadeIn" data-animated="fadeIn">
-                                                    <a href="{{route('user.login')}}"
+                                                    <a href="{{ route('user.login') }}"
                                                         class="btn btn-lg btn-round btn-secondary btn-gray-shadow mx-2">Login</a>
                                                 </div>
                                                 <div class="slide-animate animated fadeIn" data-animated="fadeIn">
-                                                    <a href="{{route('user.register')}}"
+                                                    <a href="{{ route('user.register') }}"
                                                         class="btn btn-lg btn-round btn-secondary btn-gray-shadow mx-2">Signup</a>
                                                 </div>
                                             </div>
@@ -641,24 +676,31 @@
                         </div>
                     </div>
                     <div class="row pb-3 mb-5">
-@foreach ($bots as $bot)
-                    
-
-                        <div class="columns">
-                            <ul class="price" style="margin-left: 0px;">
-                                <li class="header">{{ $bot->name }}</li>
-                                <li class="grey">Min Amount: ${{ number_format($bot->min) }}</li>
-                                <li>Max Amount: @if($bot->max >= 100000000) UNLIMITED @else ${{ number_format($bot->max) }}@endif</li>
-                                <li>Profit: {{ $bot->daily_min }}% Daily</li>
-                                <li>Duration: {{ $bot->duration }} {{ $bot->duration_type }}</li>
-                                <li>Referral Bonus: @if($bot->max >= 100000000) 10% @else 5% @endif</li>
-                                <li class="grey"><a href="{{route('user.register')}}" class="button">Sign Up</a></li>
-                            </ul>
-                        </div>
-
-                    
-@endforeach
-</div>
+                        @foreach ($bots as $bot)
+                            <div class="columns">
+                                <ul class="price" style="margin-left: 0px;">
+                                    <li class="header">{{ $bot->name }}</li>
+                                    <li class="grey">Min Amount: ${{ number_format($bot->min) }}</li>
+                                    <li>Max Amount: @if ($bot->max >= 100000000)
+                                            UNLIMITED
+                                        @else
+                                            ${{ number_format($bot->max) }}
+                                        @endif
+                                    </li>
+                                    <li>Profit: {{ $bot->daily_min }}% Daily</li>
+                                    <li>Duration: {{ $bot->duration }} {{ $bot->duration_type }}</li>
+                                    <li>Referral Bonus: @if ($bot->max >= 100000000)
+                                            10%
+                                        @else
+                                            5%
+                                        @endif
+                                    </li>
+                                    <li class="grey"><a href="{{ route('user.register') }}" class="button">Sign Up</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        @endforeach
+                    </div>
                 </div>
             </div>
         </div>
@@ -683,7 +725,8 @@
                             <div class="testimonial-2 pb-4 pb-md-0 mb-5 add-animate" data-animated="fadeInRight">
                                 <div class="testimonial-image">
                                     <figure>
-                                        <img class="img-fluid" src="/prime/assets/images/upload/testimonial-thumbnail-1.jpg"
+                                        <img class="img-fluid"
+                                            src="/prime/assets/images/upload/testimonial-thumbnail-1.jpg"
                                             alt="testimonial">
                                     </figure>
                                 </div>
@@ -703,7 +746,8 @@
                             <div class="testimonial-2 pb-4 pb-md-0 mb-5 add-animate" data-animated="fadeInRight">
                                 <div class="testimonial-image">
                                     <figure>
-                                        <img class="img-fluid" src="/prime/assets/images/upload/testimonial-thumbnail-2.jpg"
+                                        <img class="img-fluid"
+                                            src="/prime/assets/images/upload/testimonial-thumbnail-2.jpg"
                                             alt="testimonial">
                                     </figure>
                                 </div>
@@ -724,7 +768,8 @@
                             <div class="testimonial-2 mb-5 add-animate" data-animated="fadeInRight">
                                 <div class="testimonial-image">
                                     <figure>
-                                        <img class="img-fluid" src="/prime/assets/images/upload/testimonial-thumbnail-3.jpg"
+                                        <img class="img-fluid"
+                                            src="/prime/assets/images/upload/testimonial-thumbnail-3.jpg"
                                             alt="testimonial">
                                     </figure>
                                 </div>
@@ -784,7 +829,8 @@
 
                                 <div data-height="10px" style="height: 10px;"></div>
 
-                                <a href="{{route('user.register')}}" class="btn btn-lg btn-round btn-primary mb-0">Join Us!</a>
+                                <a href="{{ route('user.register') }}" class="btn btn-lg btn-round btn-primary mb-0">Join
+                                    Us!</a>
 
                                 <div data-height="100px" style="height: 100px;"></div>
 
@@ -795,219 +841,218 @@
                 </div>
             </div>
         </div>
-    
-@endsection
+    @endsection
 
-@section('scripts')
-    {{-- spining image --}}
+    @section('scripts')
+        {{-- spining image --}}
 
-    <script>
-        const circle = document.querySelector('.circle');
-        const images = document.querySelectorAll('.floating-image');
-        const numImages = images.length;
-        const deviceWidth = window.innerWidth;
+        <script>
+            const circle = document.querySelector('.circle');
+            const images = document.querySelectorAll('.floating-image');
+            const numImages = images.length;
+            const deviceWidth = window.innerWidth;
 
-        let radius;
-        if (deviceWidth > 766) {
-            radius = Math.min(circle.clientWidth / 2, circle.clientHeight / 2) - 25;
-        } else {
-            radius = deviceWidth; // Use a specific value for small deviceWidth
-        }
-
-        function moveImageInCircleAndSpin(img, centerX, centerY, angle) {
-            const x = centerX + radius * Math.cos(angle);
-            const y = centerY + radius * Math.sin(angle);
-            const rotation = angle * (180 / Math.PI);
-
-            img.style.left = `${x}px`;
-            img.style.top = `${y}px`;
-            img.style.transform = `translate(-50%, -50%) rotate(${rotation}deg)`;
-
-            const newAngle = angle + 0.01; // Adjust the rotation speed here
-            const randomDelay = Math.random() * 10; // Small delay to adjust rotation phase
-            setTimeout(() => {
-                moveImageInCircleAndSpin(img, centerX, centerY, newAngle);
-            }, randomDelay);
-        }
-
-        function initializeImagePositions() {
-            const centerX = circle.clientWidth / 2;
-            const centerY = circle.clientHeight / 2;
-
-            images.forEach((img, index) => {
-                const angle = (index / numImages) * 2 * Math.PI;
-                moveImageInCircleAndSpin(img, centerX, centerY, angle);
-            });
-        }
-
-        initializeImagePositions();
-    </script>
-
-
-    {{-- moving image --}}
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.looping-image').owlCarousel({
-                loop: true,
-                margin: 5,
-                autoplay: true,
-                autoplayTimeout: 6000,
-                autoplaySpeed: 600,
-                dots: false,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 5,
-                    },
-                    600: {
-                        items: 10,
-                    },
-                    1000: {
-                        items: 10,
-                    }
-                }
-            });
-
-            $('.reviews').owlCarousel({
-                loop: true,
-                margin: 5,
-                autoplay: true,
-                autoplayTimeout: 6000,
-                autoplaySpeed: 600,
-                dots: false,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                    },
-                    600: {
-                        items: 1,
-                    },
-                    1000: {
-                        items: 1,
-                    }
-                }
-            });
-
-            $('.deposits').owlCarousel({
-                loop: true,
-                margin: 5,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                autoplaySpeed: 600,
-                dots: false,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                    },
-                    600: {
-                        items: 1,
-                    },
-                    1000: {
-                        items: 3,
-                    }
-                }
-            });
-        });
-    </script>
-
-
-    {{-- globe --}}
-    <script src="//unpkg.com/globe.gl"></script>
-    <script>
-        fetch("{{ route('places') }}").then(res => res.json()).then(places => {
-
-            const globeInstance = Globe()
-                .globeImageUrl("{{ asset('assets/images/earth-night.jpg') }}")
-                .backgroundImageUrl("{{ asset('assets/images/ts-gray-1.png') }}")
-                .labelsData(places.features)
-                .labelLat(d => d.properties.latitude)
-                .labelLng(d => d.properties.longitude)
-                .labelText(d => d.properties.name)
-                .labelSize(d => Math.sqrt(d.properties.pop_max) * 4e-4)
-                .labelDotRadius(d => Math.sqrt(d.properties.pop_max) * 4e-4)
-                .labelColor(() => 'rgba(255, 165, 0, 0.75)')
-                .labelResolution(2)
-
-            (document.getElementById('globeViz'))
-
-
-        });
-    </script>
-
-    {{-- schuffle recent trades --}}
-    <script>
-        function updateTradeTimes() {
-            const tradeTimeElements = document.querySelectorAll('.recent_trade_time');
-            const currentTime = new Date().toLocaleTimeString();
-
-            tradeTimeElements.forEach((element) => {
-                element.textContent = currentTime;
-            });
-        }
-
-        function shuffleAndDisplayRecentTrades() {
-            const tradesDiv = document.getElementById('recentTrades');
-            const trades = Array.from(tradesDiv.children);
-
-            trades.sort(() => Math.random() - 0.5); // Shuffle the array
-
-            // Remove the existing trade divs
-            while (tradesDiv.firstChild) {
-                tradesDiv.removeChild(tradesDiv.firstChild);
+            let radius;
+            if (deviceWidth > 766) {
+                radius = Math.min(circle.clientWidth / 2, circle.clientHeight / 2) - 25;
+            } else {
+                radius = deviceWidth; // Use a specific value for small deviceWidth
             }
 
-            // Append the first 10 shuffled trade divs back to the container
-            for (let i = 0; i < 20 && i < trades.length; i++) {
-                tradesDiv.appendChild(trades[i]);
+            function moveImageInCircleAndSpin(img, centerX, centerY, angle) {
+                const x = centerX + radius * Math.cos(angle);
+                const y = centerY + radius * Math.sin(angle);
+                const rotation = angle * (180 / Math.PI);
+
+                img.style.left = `${x}px`;
+                img.style.top = `${y}px`;
+                img.style.transform = `translate(-50%, -50%) rotate(${rotation}deg)`;
+
+                const newAngle = angle + 0.01; // Adjust the rotation speed here
+                const randomDelay = Math.random() * 10; // Small delay to adjust rotation phase
+                setTimeout(() => {
+                    moveImageInCircleAndSpin(img, centerX, centerY, newAngle);
+                }, randomDelay);
             }
 
-            updateTradeTimes(); // Update trade times after shuffling
-        }
+            function initializeImagePositions() {
+                const centerX = circle.clientWidth / 2;
+                const centerY = circle.clientHeight / 2;
 
-        // Initial shuffle and display
-        shuffleAndDisplayRecentTrades();
+                images.forEach((img, index) => {
+                    const angle = (index / numImages) * 2 * Math.PI;
+                    moveImageInCircleAndSpin(img, centerX, centerY, angle);
+                });
+            }
 
-        // Set interval to shuffle and update times every second (1000 milliseconds)
-        setInterval(shuffleAndDisplayRecentTrades, 1000);
+            initializeImagePositions();
+        </script>
 
-        // update every 5 minutes
-        function updateRecentTrades() {
-            // Use jQuery to make an AJAX request to the server
-            $.ajax({
-                url: window.location.href,
-                method: 'GET',
-                dataType: 'html',
-                success: function(response) {
-                    // Update the content of the recentTradesContainer div
-                    var targetDiv = '#recentTradesContainer';
-                    $(targetDiv).html($(response).find(targetDiv).html());
-                    updateTradeTimes();
-                    $('#deposits').html($(response).find('#deposits').html());
 
-                },
-                error: function(xhr, status, error) {
-                    console.error('Error fetching data:', error);
-                }
+        {{-- moving image --}}
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.looping-image').owlCarousel({
+                    loop: true,
+                    margin: 5,
+                    autoplay: true,
+                    autoplayTimeout: 6000,
+                    autoplaySpeed: 600,
+                    dots: false,
+                    responsiveClass: true,
+                    responsive: {
+                        0: {
+                            items: 5,
+                        },
+                        600: {
+                            items: 10,
+                        },
+                        1000: {
+                            items: 10,
+                        }
+                    }
+                });
+
+                $('.reviews').owlCarousel({
+                    loop: true,
+                    margin: 5,
+                    autoplay: true,
+                    autoplayTimeout: 6000,
+                    autoplaySpeed: 600,
+                    dots: false,
+                    responsiveClass: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                        },
+                        600: {
+                            items: 1,
+                        },
+                        1000: {
+                            items: 1,
+                        }
+                    }
+                });
+
+                $('.deposits').owlCarousel({
+                    loop: true,
+                    margin: 5,
+                    autoplay: true,
+                    autoplayTimeout: 3000,
+                    autoplaySpeed: 600,
+                    dots: false,
+                    responsiveClass: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                        },
+                        600: {
+                            items: 1,
+                        },
+                        1000: {
+                            items: 3,
+                        }
+                    }
+                });
             });
-        }
+        </script>
 
-        setInterval(updateRecentTrades, 10000);
-    </script>
 
-    {{-- apply bot class --}}
-    <script>
-        const divElement = document.getElementById('hows-bot');
-        const classes = ['hows-bot-orange', 'hows-bot-green', 'hows-bot-blue', 'hows-bot-purple'];
-        let currentIndex = 0;
+        {{-- globe --}}
+        <script src="//unpkg.com/globe.gl"></script>
+        <script>
+            fetch("{{ route('places') }}").then(res => res.json()).then(places => {
 
-        function applyNextClass() {
-            divElement.className = classes[currentIndex];
-            currentIndex = (currentIndex + 1) % classes.length;
-        }
+                const globeInstance = Globe()
+                    .globeImageUrl("{{ asset('assets/images/earth-night.jpg') }}")
+                    .backgroundImageUrl("{{ asset('assets/images/ts-gray-1.png') }}")
+                    .labelsData(places.features)
+                    .labelLat(d => d.properties.latitude)
+                    .labelLng(d => d.properties.longitude)
+                    .labelText(d => d.properties.name)
+                    .labelSize(d => Math.sqrt(d.properties.pop_max) * 4e-4)
+                    .labelDotRadius(d => Math.sqrt(d.properties.pop_max) * 4e-4)
+                    .labelColor(() => 'rgba(255, 165, 0, 0.75)')
+                    .labelResolution(2)
 
-        setInterval(applyNextClass, 5000);
-    </script>
-@endsection
+                (document.getElementById('globeViz'))
+
+
+            });
+        </script>
+
+        {{-- schuffle recent trades --}}
+        <script>
+            function updateTradeTimes() {
+                const tradeTimeElements = document.querySelectorAll('.recent_trade_time');
+                const currentTime = new Date().toLocaleTimeString();
+
+                tradeTimeElements.forEach((element) => {
+                    element.textContent = currentTime;
+                });
+            }
+
+            function shuffleAndDisplayRecentTrades() {
+                const tradesDiv = document.getElementById('recentTrades');
+                const trades = Array.from(tradesDiv.children);
+
+                trades.sort(() => Math.random() - 0.5); // Shuffle the array
+
+                // Remove the existing trade divs
+                while (tradesDiv.firstChild) {
+                    tradesDiv.removeChild(tradesDiv.firstChild);
+                }
+
+                // Append the first 10 shuffled trade divs back to the container
+                for (let i = 0; i < 20 && i < trades.length; i++) {
+                    tradesDiv.appendChild(trades[i]);
+                }
+
+                updateTradeTimes(); // Update trade times after shuffling
+            }
+
+            // Initial shuffle and display
+            shuffleAndDisplayRecentTrades();
+
+            // Set interval to shuffle and update times every second (1000 milliseconds)
+            setInterval(shuffleAndDisplayRecentTrades, 1000);
+
+            // update every 5 minutes
+            function updateRecentTrades() {
+                // Use jQuery to make an AJAX request to the server
+                $.ajax({
+                    url: window.location.href,
+                    method: 'GET',
+                    dataType: 'html',
+                    success: function(response) {
+                        // Update the content of the recentTradesContainer div
+                        var targetDiv = '#recentTradesContainer';
+                        $(targetDiv).html($(response).find(targetDiv).html());
+                        updateTradeTimes();
+                        $('#deposits').html($(response).find('#deposits').html());
+
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error fetching data:', error);
+                    }
+                });
+            }
+
+            setInterval(updateRecentTrades, 10000);
+        </script>
+
+        {{-- apply bot class --}}
+        <script>
+            const divElement = document.getElementById('hows-bot');
+            const classes = ['hows-bot-orange', 'hows-bot-green', 'hows-bot-blue', 'hows-bot-purple'];
+            let currentIndex = 0;
+
+            function applyNextClass() {
+                divElement.className = classes[currentIndex];
+                currentIndex = (currentIndex + 1) % classes.length;
+            }
+
+            setInterval(applyNextClass, 5000);
+        </script>
+    @endsection

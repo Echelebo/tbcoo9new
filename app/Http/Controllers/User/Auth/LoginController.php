@@ -12,7 +12,7 @@ class LoginController extends Controller
     //show login form
     public function login()
     {
-        $page_title = 'Login';
+        $page_title = 'Member Login';
 
         return view('user.auth.login', compact(
             'page_title',
@@ -29,7 +29,7 @@ class LoginController extends Controller
             'email' => 'required',
             'password' => 'required',
         ], [
-            'email.required' => 'Email or Username is required',
+            'email.required' => 'Email is required',
         ]);
 
         //check if there is a user with such username
@@ -39,7 +39,7 @@ class LoginController extends Controller
 
         $error = null;
         if(!$user) {
-            $error = 'Incorrect username or email';
+            $error = 'Incorrect email';
         } else {
             //check the password mataches
             if (!Hash::check($password, $user->password)) {
@@ -53,7 +53,7 @@ class LoginController extends Controller
                     //send otp
                     $code = sendOtp($user->email);
                     if (env('DEMO_MODE')) {
-                        $message = 'Use otp code [' . $code . '] to complete login';  
+                        $message = 'Use otp code [' . $code . '] to complete login';
                     }
                 }
 
@@ -66,12 +66,12 @@ class LoginController extends Controller
             }
         }
 
-        
+
         //return a failed login message
         return response()->json(validationError($error), 422);
 
 
-        
+
     }
 
     //verify the user login
