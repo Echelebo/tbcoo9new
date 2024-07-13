@@ -219,7 +219,7 @@ li a:hover {
                         </div>
                         <div class="row mt-12">
                             <div class="col-md-12 text-center">
-                                <p>Balance: {{ formatAmount(user()->balance) }} TBC</p>
+                                <p>Balance {{ user()->balance }} TBC</p>
                                 <br />
                                 <p>qrcode here</p><br />
                                 <p>Wallet Address</p>
