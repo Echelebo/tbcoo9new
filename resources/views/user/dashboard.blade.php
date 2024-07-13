@@ -18,7 +18,7 @@
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 8px;
+  padding: 7px 16px;
   text-decoration: none;
   background-color: #065B9E;
   border-radius: 20%;
