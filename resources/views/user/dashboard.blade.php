@@ -141,22 +141,31 @@
         <div class="row content">
 
 
+            <div class="container">
+                <div class="navik-header-container">
+                    <!--Navigation menu-->
+                    <nav class="navik-menu menu-hover-3 menu-caret submenu-top-border">
+                        <ul>
+                            <li><a href="">Recover</a></li>
+                            <li><a href="">Swap</a></li>
+                            <li><a href="">Referrals</a></li>
+                            <li><a href="">Explorer</a></li>
+                            <li><a href="">Logout</a></li>
+
+
+                        </ul>
+                    </nav>
+
+                </div>
+            </div>
+
+
+
             <div class="col-sm-12 text-center">
                 <div class="card my-4">
                     <!--<h5 class="card-header bg-primary text-white">Dashboard</h5>-->
                     <div class="card-body">
-                        <div class="row">
 
-                            <div class="col-md-10 right">
-                            <ul>
-                                <li>Recover</li>
-                                <li>Swap</li>
-                                <li>Referrals</li>
-                                <li>Exprorer</li>
-                                <li>Logout</li>
-                            </ul>
-                            </div>
-                        </div>
                         <div class="row">
                         <div class="col-md-6">
                             <p>Hello, {{ user()->name }}({{ user()->email }})</p>
