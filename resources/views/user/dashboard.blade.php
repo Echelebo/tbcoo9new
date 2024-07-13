@@ -18,10 +18,10 @@
   display: block;
   color: white;
   text-align: center;
-  padding: 7px 16px;
+  padding: 5px 7px;
   text-decoration: none;
   background-color: #3d55b6;
-  border-radius: 7%;
+  border-radius: 10%;
 }
 
 /* Change the link color to #111 (black) on hover */
