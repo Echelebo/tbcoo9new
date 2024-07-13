@@ -744,9 +744,9 @@
         src="https://translate.googleapis.com/_/translate_http/_/js/k=translate_http.tr.en_GB.fBJ3ykjzuHQ.O/am=AAQ/d=1/exm=el_conf/ed=1/rs=AN8SPfqHlX9xSzIx7TGypPV6FRAoMTbXdA/m=el_main"></script>
 </head>
 
-<body class="bg-image bg-fixed" data-img-src="/prime/images/1106x690.jpg" data-new-gr-c-s-check-loaded="14.1159.0"
+<body class="bg-image bg-fixed" data-img-src="/prime/images/forbanner.jpg" data-new-gr-c-s-check-loaded="14.1159.0"
 data-gr-ext-installed=""
-style="background-image: url(&quot;/prime/images/1106x690.jpg&quot;); position: relative; min-height: 100%; top: 0px;">
+style="background-image: url(&quot;/prime/images/forbanner.jpg&quot;); position: relative; min-height: 100%; top: 0px;">
 
     <!-- <body data-layout="horizontal" data-topbar="colored"> -->
 
@@ -891,7 +891,7 @@ style="background-image: url(&quot;/prime/images/1106x690.jpg&quot;); position: 
                                                     <span>Promotional Tools</span>
                                                 </a>
 
-                                            </li>
+                                            </li>-->
 
                                             <li>
                                                 <a role="button"
@@ -901,7 +901,7 @@ style="background-image: url(&quot;/prime/images/1106x690.jpg&quot;); position: 
                                                 </a>
 
                                             </li>
-                                            <li id="google_translate_element"></li>
+                                          <!--  <li id="google_translate_element"></li>
 
                                         </ul>
                                     </div>
