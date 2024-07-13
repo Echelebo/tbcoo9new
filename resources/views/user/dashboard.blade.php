@@ -177,7 +177,7 @@ li a:hover {
 
                         <div class="row">
                             <div class="col-md-6" style="padding-left: 20px">
-                                <h2><font color="#111" size="18px"><b>Hello, {{ user()->name }}</b>({{ user()->email }})</font></h2>
+                                <h2><font color="#111" size="14px"><b>Hello, {{ user()->name }}</b>({{ user()->email }})</font></h2>
                                 <br />
                                 <select class="form-control form-control-lg">
                                     <option>Kringle</option>

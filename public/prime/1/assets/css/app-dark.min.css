@@ -79,7 +79,7 @@ body:not(.vertical-collpsed) .app-search {
     height: 38px;
     padding-left: 40px;
     padding-right: 20px;
-    background-color: #2d313e;
+    background-color: #e7e9ee;
     -webkit-box-shadow: none;
     box-shadow: none;
     border-radius: 5px
@@ -1262,8 +1262,8 @@ body[data-layout=horizontal][data-topbar=colored] .logo-light {
 }
 
 body[data-layout=horizontal][data-topbar=colored] .app-search .form-control {
-    background-color: rgba(45, 49, 62, .07);
-    color: #fff
+    background-color: #f0f1f4d7;
+    color: #222020;
 }
 
 body[data-layout=horizontal][data-topbar=colored] .app-search input.form-control::-webkit-input-placeholder, body[data-layout=horizontal][data-topbar=colored] .app-search span {
