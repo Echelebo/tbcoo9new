@@ -9,8 +9,8 @@
 
   li {
 
-    float: right;
-    margin-left: 10px;
+    float: left;
+    margin-right: 10px;
     margin-top: 10px;
   }
 
@@ -18,7 +18,7 @@
   display: block;
   color: white;
   text-align: center;
-  padding: 8px 6px;
+  padding: 14px 16px;
   text-decoration: none;
   background-color: #065B9E;
   border-radius: 20%;
