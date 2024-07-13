@@ -143,63 +143,11 @@
 
             <div class="col-sm-12 text-left">
                 <div class="card my-4">
-                    <h5 class="card-header bg-primary text-white">Dashboard</h5>
+                    <!--<h5 class="card-header bg-primary text-white">Dashboard</h5>-->
                     <div class="card-body">
                         <div class="row">
 
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <tbody>
 
-                                        <tr>
-                                            <td>Sponsor/Referral Name</td>
-                                            <td>{{ user()->referred_by ?? 'Direct Signup' }}</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Total Balance</td>
-                                            <td>$<b>{{ number_format(user()->balance) }}</b><br>
-                                                <small>
-                                                </small>
-                                            </td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Total Earning</td>
-                                            <td>${{ number_format($profit_fig + $capital) }}</td>
-                                        </tr>
-                                        <tr>
-                                            <td>Active Deposit</td>
-                                            <td>${{ number_format($capitalx) }}</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td>Last Deposit:</td>
-                                            <td>$<b>{{ $last_deposit->capital ?? '0' }}</b> &nbsp;
-                                                <small>{{ $last_deposit->created_at ?? '' }}</small>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>Total Deposit:</td>
-                                            <td>$<b>{{ number_format($capital) }}</b></td>
-                                        </tr>
-                                        <tr>
-                                            <td>Last Withdrawal:</td>
-                                            <td>$<b>{{ $last_withdrawals->amount ?? '0' }}</b> &nbsp;
-                                                <small>{{ $last_withdrawals->created_at ?? '' }}</small>
-                                            </td>
-                                        </tr>
-
-                                        <!--<tr>
-                            <td>Last Access</td>
-                            <td>Mar-1-2024 05:10:19 AM&nbsp;</td>
-                          </tr>-->
-                                        <tr>
-                                            <td>Referral link:</td>
-                                            <td>{{ route('user.register', ['ref' => user()->username ?? 'notset']) }}</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
                             </div>
                         </div>
 
