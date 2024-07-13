@@ -222,7 +222,7 @@ li a:hover {
                                 <p><font size="5">Balance {{ user()->balance }} TBC</font></p>
                                 <br />
                                 <p>qrcode here</p><br />
-                                <p style="background-color:#cac8c8; color: #1d1a1ad3; padding: 8px;"><font size="5">Wallet Address</font></p>
+                                <p style="background-color:#cac8c8; color: #1d1a1ad3; padding: 2px;"><font size="5">Wallet Address</font></p>
                                 </div>
 
                             </div>
