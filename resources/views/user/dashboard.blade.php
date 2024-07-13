@@ -147,9 +147,38 @@
                     <div class="card-body">
                         <div class="row">
 
+                            <div class="col-md-10 left">
+                            <ul>
+                                <li>Recover</li>
+                                <li>Swap</li>
+                                <li>Referrals</li>
+                                <li>Exprorer</li>
+                                <li>Logout</li>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                        <div class="col-md-6">
+                            <p>Hello, {{ user()->name }}({{ user()->email }})</p>
+                            <br />
+                            <select>
+                                <option>Kringle</option>
+                                <option>TBC</option>
+                                <option>USD</option>
+                            </select>
+
 
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>Balance: {{ formatAmount(user()->balance) }} TBC</p>
+                                <br />
+                                <p>qrcode here</p><br />
+                                <p>Wallet Address</p>
+                                </div>
+
+                            </div>
 
                     </div>
                 </div>
