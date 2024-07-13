@@ -923,9 +923,9 @@ style="background-image: url(&quot;/prime/images/1106x690.jpg&quot;); position: 
             </div>
         </div>-->
 
-        <!--<div class="main-content">
+        <!--<div class="main-content">-->
 
-            <div class="page-content">-->
+            <div class="page-content">
 
 
 
@@ -961,7 +961,7 @@ style="background-image: url(&quot;/prime/images/1106x690.jpg&quot;); position: 
             <!--</div>-->
             <!-- end main content-->
 
-        <!--</div>-->
+        </div>
     </div>
         <!-- END layout-wrapper -->
 
