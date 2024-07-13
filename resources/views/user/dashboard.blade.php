@@ -171,13 +171,13 @@ li a:hover {
 
 
             <div class="col-sm-12">
-                <div class="card my-4" style="background-color:#fff; color:#131111">
+                <div class="card my-4" style="background-color:#fff; color:#2b2626">
                     <!--<h5 class="card-header bg-primary text-white">Dashboard</h5>-->
                     <div class="card-body">
 
                         <div class="row">
                             <div class="col-md-6" style="padding-left: 20px">
-                                <p>Hello, {{ user()->name }}({{ user()->email }})</p>
+                                <h2><b>Hello, {{ user()->name }}</b>({{ user()->email }})</h2>
                                 <br />
                                 <select>
                                     <option>Kringle</option>
