@@ -19,11 +19,13 @@
   padding: 14px 16px;
   text-decoration: none;
   background-color: #065B9E;
+  border-radius: 20%;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
   background-color: #08548f;
+  color: white;
 }
 
 
