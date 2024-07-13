@@ -176,7 +176,7 @@ li a:hover {
                     <div class="card-body">
 
                         <div class="row">
-                            <div class="col-md-3" style="padding-left: 20px">
+                            <div class="col-md-3 col-sm-3" style="padding-left: 20px">
                                 <h2><font color="#111" size="3"><b>Hello, {{ user()->name }}</b>({{ user()->email }})</font></h2>
                                 <br />
                                 <select class="form-control form-control-lg">
@@ -186,6 +186,7 @@ li a:hover {
                                 </select>
 
 
+                                </div><div class="col-md-3">
                                 </div>
                             <div class="col-md-6">
                                 <!--Navigation menu-->
