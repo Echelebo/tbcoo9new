@@ -755,8 +755,8 @@ style="background-image: url(&quot;/prime/images/forbanner.jpg&quot;); position:
     <div id="layout-wrapper">
 
 
-        <header id="page-topbar">
-            <div class="navbar-header">
+       <!-- <header id="page-topbar">
+            <div class="navbar-header">-->
                 <!--<div class="d-flex">
                      LOGO
 
@@ -773,8 +773,8 @@ style="background-image: url(&quot;/prime/images/forbanner.jpg&quot;); position:
                     <a href="{{route('home')}}"><img width="150px" src="{{ asset('assets/images/' . site('logo_rec')) }}" alt="Header Avatar"></a>
 
                 </div>-->
-            </div>
-        </header>
+            <!--<</div>
+        </header>-->
         <!-- ========== Left Sidebar Start ========== -->
        <!-- <div class="vertical-menu">
 
