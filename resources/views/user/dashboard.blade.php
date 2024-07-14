@@ -200,9 +200,10 @@
                                 </div><div class="col-md-3">
                                 </div>
                             <div class="col-md-6">
+                                <span style="font-size:20px;cursor:pointer;right:0;background-color:#3d5acb;padding:8px;border-radius:3%;color:#fff;" onclick="openNav()">&#9776; MENU</span>
 
-                                <div id="mySidenav" class="sidenav">
-                                    <a href="javascript:void(0)" class="closebtn" style="background-color:#015697;" onclick="closeNav()">&times;CLOSE</a>
+                                <div id="mySidenav" class="sidenav text-center">
+                                    <a href="javascript:void(0)" class="closebtn" style="background-color:#3d5acb; border-radius:3%; padding: 8px; color:#fff;" onclick="closeNav()">&times;CLOSE</a>
                                     <a href="#">HOME</a>
                                     <a href="#">UPDATES</a>
                                     <a href="#">REFERRALS</a>
@@ -211,10 +212,6 @@
                                     <a href="#">LOGOUT</a>
                                   </div>
                         </div>
-
-                        <span style="font-size:20px;cursor:pointer;float:right;background-color:#015697;" onclick="openNav()">&#9776; MENU</span>
-
-
 
                         </div>
                         <div class="row mt-12">
