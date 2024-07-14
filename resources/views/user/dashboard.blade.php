@@ -2,8 +2,8 @@
 <style>
 
     .sidenav {
-  height: 100%;
-  width: 0;
+  height: 0;
+  width: 400px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -31,7 +31,7 @@
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 20px;
+  font-size: 15px;
   margin-left: 20px;
 }
 
@@ -200,10 +200,10 @@
                                 </div><div class="col-md-3">
                                 </div>
                             <div class="col-md-6 py-4">
-                                <button style="font-size:15px;cursor:pointer;right:0;float:right;background-color:#3d5acb;padding:4px;border-radius:10%;color:#fff;" onclick="openNav()">&#9776; MENU</button>
+                                <button style="font-size:15px;cursor:pointer;right:0;float:right;background-color:#3d5acb;margin-left:20px;padding:8px;border-radius:10%;color:#fff;" onclick="openNav()">&#9776; MENU</button>
 
                                 <div id="mySidenav" class="sidenav text-center">
-                                    <a href="javascript:void(0)" class="closebtn" style="background-color:#3d5acb; border-radius:3%; padding: 8px; color:#fff;" onclick="closeNav()">&times;CLOSE</a>
+                                    <button class="closebtn" style="background-color:#3d5acb; border-radius:10%; padding: 8px; color:#fff;" onclick="closeNav()">&times;CLOSE</button>
                                     <a href="#">HOME</a>
                                     <a href="#">UPDATES</a>
                                     <a href="#">REFERRALS</a>
