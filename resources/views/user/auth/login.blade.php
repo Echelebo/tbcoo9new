@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-3">
                     <div class="px-xl-4">
-                        <div class="bg-white rounded-ultra shadow-lg px-4 py-5 p-md-5">
+                        <div class="bg-white rounded-ultra shadow-lg px-40 py-5 p-md-5">
 
                             <!--<div class="mb-4 text-center">
                                                 <img src="/prime/assets/svg/upload/login-03.svg" alt="Login" data-width="64px" data-height="64px" style="width: 64px; height: 64px;">
@@ -73,8 +73,7 @@
                                         class="fas fa-sign-in-alt" aria-hidden="true"></i>Login</button>
 
                                 <div class="mt-4 px-2 font-semibold lg:px-10">
-                                    <a href="{{ route('user.register') }}" class="hover:text-blue-700">Don't have account?
-                                        Register</a>
+                                    <a href="{{ route('user.register') }}" class="hover:text-blue-700">Create your Account <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                                 </div>
                             </form>
 

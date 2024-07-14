@@ -2885,8 +2885,8 @@ a.btn.disabled, fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #2196f3;
-    border-color: #2196f3
+    background-color: #58b648;
+    border-color: #51aa42;
 }
 
 .btn-primary:hover {
@@ -14852,15 +14852,15 @@ textarea.form-control {
 
 .btn-primary {
     color: #fff;
-    background-color: #2196f3;
-    box-shadow: 0 12px 35px -10px rgba(33, 150, 243, .55), 0 8px 10px -5px rgba(0, 0, 0, .09), 0 4px 25px -2px rgba(0, 0, 0, .14)
+    background-color: #58b648;
+    box-shadow: 0 12px 35px -10px rgba(97, 173, 87, .55), 0 8px 10px -5px rgba(0, 0, 0, .09), 0 4px 25px -2px rgba(0, 0, 0, .14)
 }
 
 .btn-primary.focus, .btn-primary:focus, .btn-primary:hover {
     color: #fff;
-    background-color: #45a7f5;
-    border-color: #45a7f5;
-    box-shadow: 0 1px 9px 0 rgba(33, 150, 243, .5)
+    background-color: #58b648;
+    border-color: #58b648;
+    box-shadow: 0 1px 9px 0 rgba(88, 150, 72, .5)
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
