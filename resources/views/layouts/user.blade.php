@@ -946,11 +946,11 @@ style="background-image: url(&quot;/prime/images/forbanner.jpg&quot;); position:
                 <footer class="footer">
                     <div class="container-fluid">
                         <div class="row">
-                            <div class="col-sm-6">
+                            <div class="col-sm-6 text-white">
                                 All Rights Reserved By
                             </div>
                             <div class="col-sm-6">
-                                <div class="text-sm-right d-none d-sm-block">
+                                <div class="text-sm-right d-none d-sm-block text-white">
                                     <script>document.write(new Date().getFullYear())</script> © {{site('name')}}
                                     Ltd.
                                 </div>

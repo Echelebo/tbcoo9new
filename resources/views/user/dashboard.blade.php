@@ -181,22 +181,13 @@ li a:hover {
 
                         <!-- Header starts here -->
 
-                        <header id="page-topbar">
+                        <header id="page-topbar-x">
             <div class="navbar-header">
                 <div class="d-flex">
-                     LOGO
-
-
                    <button type="button"
-                        class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
-                        <i class="fa fa-fw fa-bars" aria-hidden="true"></i>
+                        class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn" style="float: right">
+                        <i class="fa fa-fw fa-bars" aria-hidden="true"></i> MENU
                 </button>
-
-                </div>
-
-                <div class="d-flex">
-
-                    <a href="{{route('home')}}"><img width="150px" src="{{ asset('assets/images/' . site('logo_rec')) }}" alt="Header Avatar"></a>
 
                 </div>
             </div>
@@ -206,30 +197,8 @@ li a:hover {
 
 
         <div class="vertical-menu">
-
-             LOGO
-            <div class="navbar-brand-box px-10 py-2 mt-2">
-                <a href="{{route('home')}}" class="logo logo-dark">
-                    <span class="logo-sm">
-                        <img src="{{ asset('assets/images/' . site('logo_square')) }}" alt="" width="42">
-                    </span>
-                    <span class="logo-lg">
-                        <img src="{{ asset('assets/images/' . site('logo_square')) }}" alt="" width="40">
-                    </span>
-                </a>
-
-                <a href="{{route('home')}}" class="logo logo-light">
-                    <span class="logo-sm">
-                        <img src="{{ asset('assets/images/' . site('logo_square')) }}" alt="" height="42">
-                    </span>
-                    <span class="logo-lg">
-                        <img src="{{ asset('assets/images/' . site('logo_square')) }}" alt="" height="40">
-                    </span>
-                </a>
-            </div>
-
             <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
-                <i class="fa fa-fw fa-bars" aria-hidden="true"></i>
+                <i class="fa fa-fw fa-bars" aria-hidden="true"></i> MENU
             </button>
 
             <div data-simplebar="init" class="sidebar-menu-scroll">
@@ -242,23 +211,21 @@ li a:hover {
                             <div class="simplebar-content-wrapper" style="height: auto; overflow: hidden;">
                                 <div class="simplebar-content" style="padding: 0px;">
 
-                                 Sidemenu
                                     <div id="sidebar-menu">
-                                         Left Menu Start
                                         <ul class="metismenu list-unstyled" id="side-menu">
                                             <li class="menu-title">Menu</li>
-
+                                            <p>{{ user()->email }}</p>
                                             <li>
                                                 <a href="{{ route('user.dashboard') }}" class="hover:text-blue-700 hover:scale-110 transition-all @if (request()->routeIs('user.dashboard')) ts-gray-1 @endif">
                                                     <i class="fas fa-home" aria-hidden="true"></i>
-                                                    <span>Dashboard</span>
+                                                    <span>HOME</span>
                                                 </a>
                                             </li>
 
                                             <li>
                                                 <a href="{{ route('user.bots.index') }}" class="hover:text-blue-700 hover:scale-110 transition-all @if (request()->routeIs('user.bots.index')) ts-gray-1 @endif">
                                                     <i class="fas fa-upload" aria-hidden="true"></i>
-                                                    <span>Make a Deposit</span>
+                                                    <span>EXPLORER</span>
                                                 </a>
 
                                             </li>
@@ -266,43 +233,7 @@ li a:hover {
                                             <li>
                                                 <a href="{{ route('user.bots.list') }}" class="hover:text-blue-700 hover:scale-110 transition-all @if (request()->routeIs('user.bots.list')) ts-gray-1 @endif">
                                                     <i class="fas fa-list-ol" aria-hidden="true"></i>
-                                                    <span>Deposit List</span>
-                                                </a>
-
-                                            </li>
-
-                                            <li>
-                                                <a href="{{ route('user.withdrawals.index') }}" class="hover:text-blue-700 hover:scale-110 transition-all @if (request()->routeIs('user.withdrawals.index')) ts-gray-1 @endif">
-                                                    <i class="fas fa-download" aria-hidden="true"></i>
-                                                    <span>Withdraw</span>
-                                                </a>
-
-                                            </li>
-
-                                            <li>
-                                                <a href="javascript: void(0);">
-                                                    <i class="fas fa-history" aria-hidden="true"></i>
-                                                    <span>History</span>
-                                                </a>
-                                                <ul class="sub-menu mm-collapse" aria-expanded="false">
-                                                    <li><a href="{{ route('user.deposits.history') }}" class="hover:text-blue-700 hover:scale-110 transition-all @if (request()->routeIs('user.bots.history')) ts-gray-1 @endif">Deposits History</a></li>
-                                                    <li><a href="{{ route('user.bots.earnings') }}" class="hover:text-blue-700 hover:scale-110 transition-all @if (request()->routeIs('user.bots.earnings')) ts-gray-1 @endif">Earnings History</a></li>
-                                                    <li><a href="{{ route('user.withdrawals.history') }}" class="hover:text-blue-700 hover:scale-110 transition-all @if (request()->routeIs('user.withdrawals.history')) ts-gray-1 @endif">Withdrawal History</a></li>
-                                                </ul>
-                                            </li>
-
-                                            <li>
-                                                <a href="{{ route('user.profile.edit') }}" class="hover:text-blue-700 hover:scale-110 transition-all @if (request()->routeIs('user.profile.edit')) ts-gray-1 @endif">
-                                                    <i class="fas fa-id-badge" aria-hidden="true"></i>
-                                                    <span>Edit Profile</span>
-                                                </a>
-
-                                            </li>
-
-                                            <li>
-                                                <a href="{{ route('user.security.edit') }}" class="hover:text-blue-700 hover:scale-110 transition-all @if (request()->routeIs('user.security.edit')) ts-gray-1 @endif">
-                                                    <i class="fas fa-shield-alt" aria-hidden="true"></i>
-                                                    <span>Security</span>
+                                                    <span>SUBMIT BALANCE RECOVERY REQUEST</span>
                                                 </a>
 
                                             </li>
@@ -311,14 +242,6 @@ li a:hover {
                                                 <a href="{{ route('user.referrals') }}" class="hover:text-blue-700 hover:scale-110 transition-all @if (request()->routeIs('user.referrals')) ts-gray-1 @endif">
                                                     <i class="fas fa-network-wired" aria-hidden="true"></i>
                                                     <span>Referrals</span>
-                                                </a>
-
-                                            </li>
-
-                                            <li>
-                                                <a href="{{ route('user.referralslink.linkindex') }}" class="hover:text-blue-700 hover:scale-110 transition-all @if (request()->routeIs('user.referralslink.linkindex')) ts-gray-1 @endif">
-                                                    <i class="fas fa-bullhorn" aria-hidden="true"></i>
-                                                    <span>Promotional Tools</span>
                                                 </a>
 
                                             </li>
@@ -353,7 +276,7 @@ li a:hover {
             </div>
         </div>
 
-
+<!-- end of nav bar -->
 
                         <div class="row">
                             <div class="col-md-3 col-sm-3" style="padding-left: 20px">
