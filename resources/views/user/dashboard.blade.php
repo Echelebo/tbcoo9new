@@ -1,29 +1,21 @@
 @extends('layouts.user')
 <style>
     ul{
-        list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
+
     }
 
   li {
 
-    float: left;
+
   }
 
   li a {
-  color: #111010;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  background-color: #ffffff;
+
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #ffffff93;
-  color: #111010;
+
 }
 
 
@@ -188,10 +180,8 @@ li a:hover {
                                 </div><div class="col-md-3">
                                 </div>
                             <div class="col-md-6 py-4">
-                        <button type="button" class="btn btn-sm px-3 bg-blue-500 font-size-16 header-item waves-effect vertical-menux-btn" style="float:right;">
-                        <i class="fa fa-fw fa-bars" aria-hidden="true"></i> MENU
-                            </button><!--Navigation menu-->
-                            <div class="vertical-menux">
+
+
                                     <ul>
                                         <li><a href=""><i class="fas fa-download" aria-hidden="true"></i>
                                             <span>HOME</span></a></li>
@@ -210,7 +200,7 @@ li a:hover {
                                     </ul>
 
 
-                            </div>
+
                         </div>
 
 

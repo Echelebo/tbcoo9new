@@ -38,7 +38,7 @@ body.vertical-collpsed #page-topbar {
     left: 70px
 }
 
-body:not(.vertical-collpsed) .navbar-header .vertical-menux-btn {
+body:not(.vertical-collpsed) .navbar-header .vertical-menu-btn {
     display: none
 }
 
@@ -118,7 +118,7 @@ body:not(.vertical-collpsed) .app-search {
         position: relative
     }
 
-    #page-topbar .navbar-header .vertical-menux-btn {
+    #page-topbar .navbar-header .vertical-menu-btn {
         display: inline-block
     }
 
@@ -439,7 +439,7 @@ body[data-layout=horizontal] .footer {
     transition-property: height, visibility
 }
 
-.vertical-menux {
+.vertical-menu {
     width: 250px;
     z-index: 1005;
     background: #2b2e3b;
@@ -451,7 +451,7 @@ body[data-layout=horizontal] .footer {
     box-shadow: 0 2px 4px rgba(15, 34, 58, .12)
 }
 
-.vertical-menux .vertical-menux-btn {
+.vertical-menu .vertical-menu-btn {
     position: absolute;
     right: 0;
     top: 0;
@@ -589,17 +589,17 @@ body[data-layout=horizontal] .footer {
 }
 
 @media (max-width:992px) {
-    .vertical-menux {
+    .vertical-menu {
         display: none;
         top: 70px
     }
 
-    .vertical-menux .sidebar-menu-scroll {
+    .vertical-menu .sidebar-menu-scroll {
         height: 100%;
         margin-top: 0
     }
 
-    .vertical-menux .navbar-brand-box, .vertical-menux .vertical-menux-btn {
+    .vertical-menu .navbar-brand-box, .vertical-menu .vertical-menu-btn {
         display: none
     }
 
@@ -607,7 +607,7 @@ body[data-layout=horizontal] .footer {
         margin-left: 0 !important
     }
 
-    body.sidebar-enable .vertical-menux {
+    body.sidebar-enable .vertical-menu {
         display: block
     }
 }
@@ -634,64 +634,64 @@ body[data-layout=horizontal] .footer {
     display: block
 }
 
-.vertical-collpsed .vertical-menux {
+.vertical-collpsed .vertical-menu {
     position: absolute;
     width: 70px !important;
     z-index: 1001
 }
 
-.vertical-collpsed .vertical-menux .simplebar-content-wrapper, .vertical-collpsed .vertical-menux .simplebar-mask {
+.vertical-collpsed .vertical-menu .simplebar-content-wrapper, .vertical-collpsed .vertical-menu .simplebar-mask {
     overflow: visible !important
 }
 
-.vertical-collpsed .vertical-menux .simplebar-scrollbar, .vertical-collpsed .vertical-menux .vertical-menux-btn {
+.vertical-collpsed .vertical-menu .simplebar-scrollbar, .vertical-collpsed .vertical-menu .vertical-menu-btn {
     display: none !important
 }
 
-.vertical-collpsed .vertical-menux .simplebar-offset {
+.vertical-collpsed .vertical-menu .simplebar-offset {
     bottom: 0 !important
 }
 
-.vertical-collpsed .vertical-menux #sidebar-menu .badge, .vertical-collpsed .vertical-menux #sidebar-menu .collapse.in, .vertical-collpsed .vertical-menux #sidebar-menu .menu-title {
+.vertical-collpsed .vertical-menu #sidebar-menu .badge, .vertical-collpsed .vertical-menu #sidebar-menu .collapse.in, .vertical-collpsed .vertical-menu #sidebar-menu .menu-title {
     display: none !important
 }
 
-.vertical-collpsed .vertical-menux #sidebar-menu .nav.collapse {
+.vertical-collpsed .vertical-menu #sidebar-menu .nav.collapse {
     height: inherit !important
 }
 
-.vertical-collpsed .vertical-menux #sidebar-menu .has-arrow:after {
+.vertical-collpsed .vertical-menu #sidebar-menu .has-arrow:after {
     display: none
 }
 
-.vertical-collpsed .vertical-menux #sidebar-menu>ul>li {
+.vertical-collpsed .vertical-menu #sidebar-menu>ul>li {
     position: relative;
     white-space: nowrap
 }
 
-.vertical-collpsed .vertical-menux #sidebar-menu>ul>li>a {
+.vertical-collpsed .vertical-menu #sidebar-menu>ul>li>a {
     padding: 15px 0;
     -webkit-transition: none;
     transition: none
 }
 
-.vertical-collpsed .vertical-menux #sidebar-menu>ul>li>a:active, .vertical-collpsed .vertical-menux #sidebar-menu>ul>li>a:focus, .vertical-collpsed .vertical-menux #sidebar-menu>ul>li>a:hover {
+.vertical-collpsed .vertical-menu #sidebar-menu>ul>li>a:active, .vertical-collpsed .vertical-menu #sidebar-menu>ul>li>a:focus, .vertical-collpsed .vertical-menu #sidebar-menu>ul>li>a:hover {
     color: #5b73e8
 }
 
-.vertical-collpsed .vertical-menux #sidebar-menu>ul>li>a i {
+.vertical-collpsed .vertical-menu #sidebar-menu>ul>li>a i {
     font-size: 1.3rem;
     text-align: center;
     min-width: 50px;
     padding-bottom: 0
 }
 
-.vertical-collpsed .vertical-menux #sidebar-menu>ul>li>a span {
+.vertical-collpsed .vertical-menu #sidebar-menu>ul>li>a span {
     display: none;
     padding-left: 25px
 }
 
-.vertical-collpsed .vertical-menux #sidebar-menu>ul>li:hover>a {
+.vertical-collpsed .vertical-menu #sidebar-menu>ul>li:hover>a {
     position: relative;
     width: calc(180px + 70px);
     color: #5b73e8;
@@ -702,15 +702,15 @@ body[data-layout=horizontal] .footer {
     box-shadow: inset 0 3px 10px 0 rgba(154, 161, 171, .2)
 }
 
-.vertical-collpsed .vertical-menux #sidebar-menu>ul>li:hover>a i {
+.vertical-collpsed .vertical-menu #sidebar-menu>ul>li:hover>a i {
     color: #5b73e8
 }
 
-.vertical-collpsed .vertical-menux #sidebar-menu>ul>li:hover>a span {
+.vertical-collpsed .vertical-menu #sidebar-menu>ul>li:hover>a span {
     display: inline
 }
 
-.vertical-collpsed .vertical-menux #sidebar-menu>ul>li:hover>ul {
+.vertical-collpsed .vertical-menu #sidebar-menu>ul>li:hover>ul {
     display: block;
     left: 70px;
     position: absolute;
@@ -720,12 +720,12 @@ body[data-layout=horizontal] .footer {
     box-shadow: 3px 5px 10px 0 rgba(54, 61, 71, .1)
 }
 
-.vertical-collpsed .vertical-menux #sidebar-menu>ul>li:hover>ul ul {
+.vertical-collpsed .vertical-menu #sidebar-menu>ul>li:hover>ul ul {
     -webkit-box-shadow: 3px 5px 10px 0 rgba(54, 61, 71, .1);
     box-shadow: 3px 5px 10px 0 rgba(54, 61, 71, .1)
 }
 
-.vertical-collpsed .vertical-menux #sidebar-menu>ul>li:hover>ul a {
+.vertical-collpsed .vertical-menu #sidebar-menu>ul>li:hover>ul a {
     -webkit-box-shadow: none;
     box-shadow: none;
     padding: 8px 20px;
@@ -735,18 +735,18 @@ body[data-layout=horizontal] .footer {
     color: #7b8198
 }
 
-.vertical-collpsed .vertical-menux #sidebar-menu>ul>li:hover>ul a:hover {
+.vertical-collpsed .vertical-menu #sidebar-menu>ul>li:hover>ul a:hover {
     color: #5b73e8
 }
 
-.vertical-collpsed .vertical-menux #sidebar-menu>ul ul {
+.vertical-collpsed .vertical-menu #sidebar-menu>ul ul {
     padding: 5px 0;
     z-index: 9999;
     display: none;
     background-color: #2b2e3b
 }
 
-.vertical-collpsed .vertical-menux #sidebar-menu>ul ul li:hover>ul {
+.vertical-collpsed .vertical-menu #sidebar-menu>ul ul li:hover>ul {
     display: block;
     left: 190px;
     height: auto !important;
@@ -755,7 +755,7 @@ body[data-layout=horizontal] .footer {
     width: 190px
 }
 
-.vertical-collpsed .vertical-menux #sidebar-menu>ul ul li>a span.pull-right {
+.vertical-collpsed .vertical-menu #sidebar-menu>ul ul li>a span.pull-right {
     position: absolute;
     right: 20px;
     top: 12px;
@@ -763,15 +763,15 @@ body[data-layout=horizontal] .footer {
     transform: rotate(270deg)
 }
 
-.vertical-collpsed .vertical-menux #sidebar-menu>ul ul li.active a {
+.vertical-collpsed .vertical-menu #sidebar-menu>ul ul li.active a {
     color: #212529
 }
 
-body[data-sidebar=dark] .vertical-menux {
+body[data-sidebar=dark] .vertical-menu {
     background: #2b2e3b
 }
 
-body[data-sidebar=dark] .vertical-menux .vertical-menux-btn {
+body[data-sidebar=dark] .vertical-menu .vertical-menu-btn {
     color: #898fa9
 }
 
@@ -803,32 +803,32 @@ body[data-sidebar=dark].vertical-collpsed {
     min-height: 1300px
 }
 
-body[data-sidebar=dark].vertical-collpsed .vertical-menux #sidebar-menu>ul>li:hover>a {
+body[data-sidebar=dark].vertical-collpsed .vertical-menu #sidebar-menu>ul>li:hover>a {
     background: #2f3341;
     color: #fff
 }
 
-body[data-sidebar=dark].vertical-collpsed .vertical-menux #sidebar-menu>ul>li:hover>a i {
+body[data-sidebar=dark].vertical-collpsed .vertical-menu #sidebar-menu>ul>li:hover>a i {
     color: #fff
 }
 
-body[data-sidebar=dark].vertical-collpsed .vertical-menux #sidebar-menu>ul>li:hover>ul a {
+body[data-sidebar=dark].vertical-collpsed .vertical-menu #sidebar-menu>ul>li:hover>ul a {
     color: #7b8198
 }
 
-body[data-sidebar=dark].vertical-collpsed .vertical-menux #sidebar-menu>ul>li:hover>ul a:hover {
+body[data-sidebar=dark].vertical-collpsed .vertical-menu #sidebar-menu>ul>li:hover>ul a:hover {
     color: #fff
 }
 
-body[data-sidebar=dark].vertical-collpsed .vertical-menux #sidebar-menu>ul ul {
+body[data-sidebar=dark].vertical-collpsed .vertical-menu #sidebar-menu>ul ul {
     background-color: #2b2e3b
 }
 
-body[data-sidebar=dark].vertical-collpsed .vertical-menux #sidebar-menu ul li.mm-active .active {
+body[data-sidebar=dark].vertical-collpsed .vertical-menu #sidebar-menu ul li.mm-active .active {
     color: #5b73e8 !important
 }
 
-body[data-sidebar=dark].vertical-collpsed .vertical-menux #sidebar-menu ul li.mm-active .active i {
+body[data-sidebar=dark].vertical-collpsed .vertical-menu #sidebar-menu ul li.mm-active .active i {
     color: #5b73e8 !important
 }
 
@@ -870,16 +870,16 @@ body[data-sidebar-size=small] .navbar-brand-box {
     }
 }
 
-body[data-sidebar-size=small] .vertical-menux {
+body[data-sidebar-size=small] .vertical-menu {
     width: 160px;
     text-align: center
 }
 
-body[data-sidebar-size=small] .vertical-menux .badge, body[data-sidebar-size=small] .vertical-menux .has-arrow:after {
+body[data-sidebar-size=small] .vertical-menu .badge, body[data-sidebar-size=small] .vertical-menu .has-arrow:after {
     display: none !important
 }
 
-body[data-sidebar-size=small] .vertical-menux .vertical-menux-btn {
+body[data-sidebar-size=small] .vertical-menu .vertical-menu-btn {
     display: none
 }
 
@@ -913,7 +913,7 @@ body[data-sidebar-size=small][data-sidebar=dark] #sidebar-menu ul li.menu-title 
     background-color: #2f3341
 }
 
-body[data-sidebar-size=small]:not(.vertical-collpsed) .navbar-header .vertical-menux-btn {
+body[data-sidebar-size=small]:not(.vertical-collpsed) .navbar-header .vertical-menu-btn {
     display: block
 }
 
@@ -921,11 +921,11 @@ body[data-sidebar-size=small].vertical-collpsed .main-content {
     margin-left: 70px
 }
 
-body[data-sidebar-size=small].vertical-collpsed .vertical-menux #sidebar-menu {
+body[data-sidebar-size=small].vertical-collpsed .vertical-menu #sidebar-menu {
     text-align: left
 }
 
-body[data-sidebar-size=small].vertical-collpsed .vertical-menux #sidebar-menu>ul>li>a i {
+body[data-sidebar-size=small].vertical-collpsed .vertical-menu #sidebar-menu>ul>li>a i {
     display: inline-block
 }
 
@@ -933,11 +933,11 @@ body[data-sidebar-size=small].vertical-collpsed #page-topbar, body[data-sidebar-
     left: 70px
 }
 
-body[data-sidebar=colored] .vertical-menux {
+body[data-sidebar=colored] .vertical-menu {
     background-color: #5b73e8
 }
 
-body[data-sidebar=colored] .vertical-menux .vertical-menux-btn {
+body[data-sidebar=colored] .vertical-menu .vertical-menu-btn {
     color: rgba(255, 255, 255, .8)
 }
 
@@ -990,16 +990,16 @@ body[data-sidebar=colored] #sidebar-menu ul li .badge.badge-primary {
     color: #5b73e8
 }
 
-body[data-sidebar=colored].vertical-collpsed .vertical-menux #sidebar-menu>ul>li:hover>a {
+body[data-sidebar=colored].vertical-collpsed .vertical-menu #sidebar-menu>ul>li:hover>a {
     background-color: #647be9;
     color: #fff
 }
 
-body[data-sidebar=colored].vertical-collpsed .vertical-menux #sidebar-menu>ul>li:hover>a i {
+body[data-sidebar=colored].vertical-collpsed .vertical-menu #sidebar-menu>ul>li:hover>a i {
     color: #fff
 }
 
-body[data-sidebar=colored].vertical-collpsed .vertical-menux #sidebar-menu ul li.mm-active .active {
+body[data-sidebar=colored].vertical-collpsed .vertical-menu #sidebar-menu ul li.mm-active .active {
     color: #5b73e8 !important
 }
 
@@ -1914,7 +1914,7 @@ body[data-layout=horizontal][data-layout-size=boxed] .container-fluid, body[data
 }
 
 @media print {
-    .footer, .navbar-header, .page-title-box, .right-bar, .vertical-menux {
+    .footer, .navbar-header, .page-title-box, .right-bar, .vertical-menu {
         display: none !important
     }
 
