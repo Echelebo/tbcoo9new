@@ -201,24 +201,24 @@
                                 </div><div class="col-md-3">
                                 </div>
                             <div class="col-md-6 py-4">
-                                <button class="px-8" style="font-size:15px;cursor:pointer;right:0;float:right;background-color:#3d5acb;margin-left:20px;padding:4px;border-radius:10%;color:#fff;" onclick="openNav()">&#9776; MENU</button>
+                                <button style="font-size:15px;cursor:pointer;right:0;float:right;background-color:#3d5acb;margin-left:20px;padding:8px 4px;border-radius:10%;color:#fff;" onclick="openNav()">&#9776; MENU</button>
 
                                 <div id="mySidenav" class="sidenav text-center">
-                                    <a href="javascript:void(0)" class="closebtn px-8" style="background-color:#3d5acb; border-radius:10%; padding: 4px; color:#fff;" onclick="closeNav()">&times; CLOSE</a>
-                                    <h2 class="mt-4" style="color: #111010; font-size: 20px;">Menu</h2>
+                                    <a href="javascript:void(0)" class="closebtn" style="background-color:#3d5acb; border-radius:10%; padding:8px 4px; color:#fff;" onclick="closeNav()">&times; CLOSE</a>
+                                    <h2 class="mt-4" style="color: #111010; font-size: 30px;">Menu</h2>
                                     <p>{{ user()->email }}</p>
                                     <a href="#" class="mt-4">HOME</a>
-                                    <hr style="width: 80%; background-color:gray; height:0.5px; border-width:0; margin: 0 auto; text-align:center;"/>
+                                    <hr style="width: 80%; background-color:gray; height:0.2px; padding:8px; border-width:0; margin: 0 auto; text-align:center;"/>
                                     <a href="#">UPDATES</a>
-                                    <hr style="width: 80%; background-color:gray; height:0.5px; border-width:0; margin: 0 auto; text-align:center;"/>
+                                    <hr style="width: 80%; background-color:gray; height:0.2px; padding:8px; border-width:0; margin: 0 auto; text-align:center;"/>
                                     <a href="#">REFERRALS</a>
-                                    <hr style="width: 80%; background-color:gray; height:0.5px; border-width:0; margin: 0 auto; text-align:center;"/>
+                                    <hr style="width: 80%; background-color:gray; height:0.2px; padding:8px; border-width:0; margin: 0 auto; text-align:center;"/>
                                     <a href="#">EXPLORER</a>
-                                    <hr style="width: 80%; background-color:gray; height:0.5px; border-width:0; margin: 0 auto; text-align:center;"/>
+                                    <hr style="width: 80%; background-color:gray; height:0.2px; padding:8px; border-width:0; margin: 0 auto; text-align:center;"/>
                                     <a href="#">SUBMIT BALANCE RECOVERY REQUEST</a>
-                                    <hr style="width: 80%; background-color:gray; height:0.5px; border-width:0; margin: 0 auto; text-align:center;"/>
+                                    <hr style="width: 80%; background-color:gray; height:0.2px; padding:8px; border-width:0; margin: 0 auto; text-align:center;"/>
                                     <a href="#">LOGOUT</a>
-                                    <hr style="width: 80%; background-color:gray; height:0.5px; border-width:0;margin: 0 auto; text-align:center;"/>
+                                    <hr style="width: 80%; background-color:gray; height:0.2px; padding:8px;border-width:0;margin: 0 auto; text-align:center;"/>
                                   </div>
                         </div>
 
