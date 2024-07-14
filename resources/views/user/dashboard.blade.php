@@ -10,15 +10,13 @@
   li {
 
     float: left;
-    margin-right: 10px;
-    margin-top: 10px;
   }
 
   li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 5px 7px;
+  padding: 14px 16px;
   text-decoration: none;
   background-color: #3d55b6;
   border-radius: 15%;
