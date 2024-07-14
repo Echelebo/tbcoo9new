@@ -13,19 +13,17 @@
   }
 
   li a {
-  display: block;
-  color: white;
+  color: #111010;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  background-color: #3d55b6;
-  border-radius: 15%;
+  background-color: #ffffff;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #08548f;
-  color: white;
+  background-color: #ffffff93;
+  color: #111010;
 }
 
 
