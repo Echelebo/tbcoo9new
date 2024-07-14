@@ -5,7 +5,7 @@
     }
 
   li {
-
+float: right;
 
   }
 
@@ -182,7 +182,7 @@ li a:hover {
                             <div class="col-md-6 py-4">
 
 
-                                    <ul>
+                                    <ul class="text-center">
                                         <li><a href=""><i class="fas fa-download" aria-hidden="true"></i>
                                             <span>HOME</span></a></li>
                                         <li><a href=""><i class="fas fa-upload" aria-hidden="true"></i>
