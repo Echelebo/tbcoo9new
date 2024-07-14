@@ -208,17 +208,17 @@
                                     <h2 class="mt-4" style="color: #111010; font-size: 20px;">Menu</h2>
                                     <p>{{ user()->email }}</p>
                                     <a href="#" class="mt-4">HOME</a>
-                                    <hr style="width: 80%; background-color:gray; height:2px; margin: 0 auto; text-align:center;"/>
+                                    <hr style="width: 80%; background-color:gray; height:0.5px; border-width:0; margin: 0 auto; text-align:center;"/>
                                     <a href="#">UPDATES</a>
-                                    <hr style="width: 80%; background-color:gray; height:2px; margin: 0 auto; text-align:center;"/>
+                                    <hr style="width: 80%; background-color:gray; height:0.5px; border-width:0; margin: 0 auto; text-align:center;"/>
                                     <a href="#">REFERRALS</a>
-                                    <hr style="width: 80%; background-color:gray; height:2px; margin: 0 auto; text-align:center;"/>
+                                    <hr style="width: 80%; background-color:gray; height:0.5px; border-width:0; margin: 0 auto; text-align:center;"/>
                                     <a href="#">EXPLORER</a>
-                                    <hr style="width: 80%; background-color:gray; height:2px; margin: 0 auto; text-align:center;"/>
+                                    <hr style="width: 80%; background-color:gray; height:0.5px; border-width:0; margin: 0 auto; text-align:center;"/>
                                     <a href="#">SUBMIT BALANCE RECOVERY REQUEST</a>
-                                    <hr style="width: 80%; background-color:gray; height:2px; margin: 0 auto; text-align:center;"/>
+                                    <hr style="width: 80%; background-color:gray; height:0.5px; border-width:0; margin: 0 auto; text-align:center;"/>
                                     <a href="#">LOGOUT</a>
-                                    <hr style="width: 80%; background-color:gray; height:2px; margin: 0 auto; text-align:center;"/>
+                                    <hr style="width: 80%; background-color:gray; height:0.5px; border-width:0;margin: 0 auto; text-align:center;"/>
                                   </div>
                         </div>
 
