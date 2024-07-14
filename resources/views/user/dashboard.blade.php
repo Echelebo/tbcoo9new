@@ -6,17 +6,18 @@
   width: 0;
   position: fixed;
   z-index: 1;
+  top: 0;
   right: 0;
   background-color: #fff;
   overflow-x: hidden;
   transition: 0.5s;
-  padding-top: 60px;
+  padding-top: 20px;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 16px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 15px;
   color: #111010;
   display: block;
   transition: 0.3s;
@@ -198,10 +199,10 @@
 
                                 </div><div class="col-md-3">
                                 </div>
-                            <div class="col-md-6 py-4">
+                            <div class="col-md-6">
 
                                 <div id="mySidenav" class="sidenav">
-                                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;CLOSE</a>
+                                    <a href="javascript:void(0)" class="closebtn" style="background-color:#015697;" onclick="closeNav()">&times;CLOSE</a>
                                     <a href="#">HOME</a>
                                     <a href="#">UPDATES</a>
                                     <a href="#">REFERRALS</a>
@@ -211,7 +212,7 @@
                                   </div>
                         </div>
 
-                        <span style="font-size:20px;cursor:pointer;float:right;" onclick="openNav()">&#9776; open</span>
+                        <span style="font-size:20px;cursor:pointer;float:right;background-color:#015697;" onclick="openNav()">&#9776; MENU</span>
 
 
 
