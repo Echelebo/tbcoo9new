@@ -225,7 +225,7 @@
                         </div>
                         <div class="row mt-12">
                             <div class="col-md-12 text-center">
-                                <div style="width:50%">
+                                <div style="">
                                 <p><font size="5">Balance {{ user()->balance }} TBC</font></p>
                                 <br />
                                 <p>qrcode here</p><br />
