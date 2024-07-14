@@ -200,7 +200,7 @@
                                 </div><div class="col-md-3">
                                 </div>
                             <div class="col-md-6 py-4">
-                                <span style="font-size:20px;cursor:pointer;right:40px;background-color:#3d5acb;padding:8px;border-radius:10%;color:#fff;" onclick="openNav()">&#9776; MENU</span>
+                                <button style="font-size:15px;cursor:pointer;right:0;float:right;background-color:#3d5acb;padding:4px;border-radius:10%;color:#fff;" onclick="openNav()">&#9776; MENU</button>
 
                                 <div id="mySidenav" class="sidenav text-center">
                                     <a href="javascript:void(0)" class="closebtn" style="background-color:#3d5acb; border-radius:3%; padding: 8px; color:#fff;" onclick="closeNav()">&times;CLOSE</a>
