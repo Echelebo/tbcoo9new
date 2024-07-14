@@ -18,7 +18,14 @@ li a:hover {
 
 }
 
-
+.menu-bodyx{
+    background: #fff;
+    Color: #111010;
+    width: 300px;
+    height: auto;
+    border-radius: 3%;
+    z-index: 291823;
+}
 
 </style>
 @section('contents')
@@ -181,7 +188,7 @@ li a:hover {
                                 </div>
                             <div class="col-md-6 py-4">
 
-
+                                <div class="menu-bodyx">
                                     <ul class="text-center">
                                         <li><a href=""><i class="fas fa-download" aria-hidden="true"></i>
                                             <span>HOME</span></a></li>
@@ -198,6 +205,7 @@ li a:hover {
 
 
                                     </ul>
+                                </div>
 
 
 
