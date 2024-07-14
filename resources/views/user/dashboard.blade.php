@@ -203,13 +203,21 @@
                                 <button style="font-size:15px;cursor:pointer;right:0;float:right;background-color:#3d5acb;margin-left:20px;padding:8px;border-radius:10%;color:#fff;" onclick="openNav()">&#9776; MENU</button>
 
                                 <div id="mySidenav" class="sidenav text-center">
-                                    <a href="javascript:void(0)" class="closebtn" style="background-color:#3d5acb; border-radius:10%; padding: 8px; color:#fff;" onclick="closeNav()">&times;CLOSE</a>
-                                    <a href="#">HOME</a>
+                                    <a href="javascript:void(0)" class="closebtn" style="background-color:#3d5acb; border-radius:10%; padding: 8px; color:#fff;" onclick="closeNav()">&times; CLOSE</a>
+                                    <a href="#" class="mt-4">HOME</a>
+                                    <p>{{ user()->email }}</p>
+                                    <a href="#" class="mt-4">HOME</a>
+                                    <hr style="width: 80%;"/>
                                     <a href="#">UPDATES</a>
+                                    <hr style="width: 80%;"/>
                                     <a href="#">REFERRALS</a>
+                                    <hr style="width: 80%;"/>
                                     <a href="#">EXPLORER</a>
+                                    <hr style="width: 80%;"/>
                                     <a href="#">SUBMIT BALANCE RECOVERY REQUEST</a>
+                                    <hr style="width: 80%;"/>
                                     <a href="#">LOGOUT</a>
+                                    <hr style="width: 80%;"/>
                                   </div>
                         </div>
 
