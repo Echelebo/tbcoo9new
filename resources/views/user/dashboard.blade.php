@@ -36,7 +36,7 @@
   margin-left: 20px;
 }
 
-@media screen and (min-device-width: 768px) and (max-device-width: 1605px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1605px) {
     .wallet-area {
     margin: auto;
     width:60%;
