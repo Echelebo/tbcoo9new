@@ -36,6 +36,13 @@
   margin-left: 20px;
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1605px) {
+    .wallet-area {
+    style="margin: auto;
+    width:60%;
+}
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 9px;}
   .sidenav a {font-size: 13px;}
@@ -225,7 +232,7 @@
                         </div>
                         <div class="row mt-12">
                             <div class="col-md-12 text-center">
-                                <div style="margin: auto; width:70%;">
+                                <div class="wallet-area">
                                 <p><font size="5">Balance {{ user()->balance }} TBC</font></p>
                                 <br />
                                 <p>qrcode here</p><br />
