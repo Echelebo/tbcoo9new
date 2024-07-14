@@ -43,9 +43,12 @@
 }
 }
 
-@media screen and (max-height: 450px) {
+@media screen and (max-height: 480px) {
   .sidenav {padding-top: 9px;}
   .sidenav a {font-size: 13px;}
+  .wallet-area {
+    width:100%;
+}
 }
 
 </style>
