@@ -6,7 +6,7 @@
             <div class="row">
                 <div class="col-md-10 offset-md-1 col-lg-6 offset-lg-3">
                     <div class="px-xl-4">
-                        <div class="bg-white rounded-ultra shadow-lg px-40 py-5 p-md-5">
+                        <div class="bg-white rounded-ultra shadow-lg px-8 py-5 p-md-5">
 
                             <!--<div class="mb-4 text-center">
                                                     <img src="/prime/assets/svg/upload/register-03.svg" alt="Register" data-width="64px"
