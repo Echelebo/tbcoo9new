@@ -181,7 +181,7 @@ li a:hover {
 
                         <!-- Header starts here -->
 
-                        <header id="page-topbar-x">
+                        <header id="page-topbar">
             <div class="navbar-header">
                 <div class="d-flex">
                    <button type="button"
@@ -200,18 +200,7 @@ li a:hover {
             <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
                 <i class="fa fa-fw fa-bars" aria-hidden="true"></i> MENU
             </button>
-
-            <div data-simplebar="init" class="sidebar-menu-scroll">
-                <div class="simplebar-wrapper" style="margin: 0px;">
-                    <div class="simplebar-height-auto-observer-wrapper">
-                        <div class="simplebar-height-auto-observer"></div>
-                    </div>
-                    <div class="simplebar-mask">
-                        <div class="simplebar-offset" style="right: 0px; bottom: 0px;">
-                            <div class="simplebar-content-wrapper" style="height: auto; overflow: hidden;">
-                                <div class="simplebar-content" style="padding: 0px;">
-
-                                    <div id="sidebar-menu">
+            <div id="sidebar-menu">
                                         <ul class="metismenu list-unstyled" id="side-menu">
                                             <li class="menu-title">Menu</li>
                                             <p>{{ user()->email }}</p>
@@ -241,7 +230,7 @@ li a:hover {
                                             <li>
                                                 <a href="{{ route('user.referrals') }}" class="hover:text-blue-700 hover:scale-110 transition-all @if (request()->routeIs('user.referrals')) ts-gray-1 @endif">
                                                     <i class="fas fa-network-wired" aria-hidden="true"></i>
-                                                    <span>Referrals</span>
+                                                    <span>REFERRALS</span>
                                                 </a>
 
                                             </li>
@@ -250,30 +239,14 @@ li a:hover {
                                                 <a role="button"
                                     class="hover:text-blue-700 logout">
                                                     <i class="fas fa-sign-out-alt" aria-hidden="true"></i>
-                                                    <span>Logout</span>
+                                                    <span>LOGOUT</span>
                                                 </a>
 
                                             </li>
-                                            <li id="google_translate_element"></li>
+
 
                                         </ul>
                                     </div>
-                                     Sidebar
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="simplebar-placeholder" style="width: 0px; height: 0px;"></div>
-                </div>
-                <div class="simplebar-track simplebar-horizontal" style="visibility: hidden;">
-                    <div class="simplebar-scrollbar" style="transform: translate3d(0px, 0px, 0px); display: none;">
-                    </div>
-                </div>
-                <div class="simplebar-track simplebar-vertical" style="visibility: hidden;">
-                    <div class="simplebar-scrollbar"
-                        style="transform: translate3d(0px, 0px, 0px); display: none; height: 465px;"></div>
-                </div>
-            </div>
         </div>
 
 <!-- end of nav bar -->
