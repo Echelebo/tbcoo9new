@@ -1,11 +1,11 @@
 @extends('layouts.user')
 <style>
     ul{
-
+        float: right;
     }
 
   li {
-float: right;
+
 
   }
 
