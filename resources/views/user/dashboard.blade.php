@@ -209,15 +209,15 @@
                                     <p>{{ user()->email }}</p>
                                     <a href="#" class="mt-4">HOME</a>
                                     <hr style="width: 80%; background-color:#dbdbdb; height:0.2px;  border-width:0; margin: auto; text-align:center;"/>
-                                    <a href="#" class="mt-4">UPDATES</a>
+                                    <a href="#" class="mt-2">UPDATES</a>
                                     <hr style="width: 80%; background-color:#dbdbdb; height:0.2px;  border-width:0; margin: auto; text-align:center;"/>
-                                    <a href="#" class="mt-4">REFERRALS</a>
+                                    <a href="#" class="mt-2">REFERRALS</a>
                                     <hr style="width: 80%; background-color:#dbdbdb; height:0.2px;  border-width:0; margin: auto; text-align:center;"/>
-                                    <a href="#" class="mt-4">EXPLORER</a>
+                                    <a href="#" class="mt-2">EXPLORER</a>
                                     <hr style="width: 80%; background-color:#dbdbdb; height:0.2px; border-width:0; margin: auto; text-align:center;"/>
-                                    <a href="#" class="mt-4">SUBMIT BALANCE RECOVERY REQUEST</a>
+                                    <a href="#" class="mt-2">SUBMIT BALANCE RECOVERY REQUEST</a>
                                     <hr style="width: 80%; background-color:#dbdbdb; height:0.2px; border-width:0; margin: auto; text-align:center;"/>
-                                    <a href="#" class="mt-4">LOGOUT</a>
+                                    <a href="#" class="mt-2">LOGOUT</a>
                                     <hr style="width: 80%; background-color:#dbdbdb; height:0.2px; border-width:0;margin: auto; text-align:center;"/>
                                   </div>
                         </div>
