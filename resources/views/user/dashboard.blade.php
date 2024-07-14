@@ -188,7 +188,7 @@ li a:hover {
                                 </div><div class="col-md-3">
                                 </div>
                             <div class="col-md-6 py-4">
-                        <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menux-btn">
+                        <button type="button" class="btn btn-sm px-3 bg-blue-500 font-size-16 header-item waves-effect vertical-menux-btn" style="float:right;">
                         <i class="fa fa-fw fa-bars" aria-hidden="true"></i> MENU
                             </button><!--Navigation menu-->
                             <div class="vertical-menux">
