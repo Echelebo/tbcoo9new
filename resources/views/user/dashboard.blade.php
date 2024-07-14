@@ -178,79 +178,6 @@ li a:hover {
                 <div class="card my-4" style="background-color:#fff; color:#111010">
                     <!--<h5 class="card-header bg-primary text-white">Dashboard</h5>-->
                     <div class="card-body">
-
-                        <!-- Header starts here -->
-
-                        <header id="page-topbar">
-            <div class="navbar-header">
-                <div class="d-flex">
-                   <button type="button"
-                        class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn" style="float: right">
-                        <i class="fa fa-fw fa-bars" aria-hidden="true"></i> MENU
-                </button>
-
-                </div>
-            </div>
-        </header>
-
-        <!-- header ends here -->
-
-
-        <div class="vertical-menu">
-            <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
-                <i class="fa fa-fw fa-bars" aria-hidden="true"></i> MENU
-            </button>
-            <div id="sidebar-menu">
-                                        <ul class="metismenu list-unstyled" id="side-menu">
-                                            <li class="menu-title">Menu</li>
-                                            <p>{{ user()->email }}</p>
-                                            <li>
-                                                <a href="{{ route('user.dashboard') }}" class="hover:text-blue-700 hover:scale-110 transition-all @if (request()->routeIs('user.dashboard')) ts-gray-1 @endif">
-                                                    <i class="fas fa-home" aria-hidden="true"></i>
-                                                    <span>HOME</span>
-                                                </a>
-                                            </li>
-
-                                            <li>
-                                                <a href="{{ route('user.bots.index') }}" class="hover:text-blue-700 hover:scale-110 transition-all @if (request()->routeIs('user.bots.index')) ts-gray-1 @endif">
-                                                    <i class="fas fa-upload" aria-hidden="true"></i>
-                                                    <span>EXPLORER</span>
-                                                </a>
-
-                                            </li>
-
-                                            <li>
-                                                <a href="{{ route('user.bots.list') }}" class="hover:text-blue-700 hover:scale-110 transition-all @if (request()->routeIs('user.bots.list')) ts-gray-1 @endif">
-                                                    <i class="fas fa-list-ol" aria-hidden="true"></i>
-                                                    <span>SUBMIT BALANCE RECOVERY REQUEST</span>
-                                                </a>
-
-                                            </li>
-
-                                            <li>
-                                                <a href="{{ route('user.referrals') }}" class="hover:text-blue-700 hover:scale-110 transition-all @if (request()->routeIs('user.referrals')) ts-gray-1 @endif">
-                                                    <i class="fas fa-network-wired" aria-hidden="true"></i>
-                                                    <span>REFERRALS</span>
-                                                </a>
-
-                                            </li>
-
-                                            <li>
-                                                <a role="button"
-                                    class="hover:text-blue-700 logout">
-                                                    <i class="fas fa-sign-out-alt" aria-hidden="true"></i>
-                                                    <span>LOGOUT</span>
-                                                </a>
-
-                                            </li>
-
-
-                                        </ul>
-                                    </div>
-        </div>
-
-<!-- end of nav bar -->
-
                         <div class="row">
                             <div class="col-md-3 col-sm-3" style="padding-left: 20px">
                                 <h2><font color="#111010" size="4"><b>Hello, {{ user()->name }}</b><br />({{ user()->email }})</font></h2>
@@ -265,26 +192,30 @@ li a:hover {
                                 </div><div class="col-md-3">
                                 </div>
                             <div class="col-md-6 py-4">
-                                <!--Navigation menu-->
-
+                        <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect vertical-menu-btn">
+                        <i class="fa fa-fw fa-bars" aria-hidden="true"></i> MENU
+                            </button><!--Navigation menu-->
+                            <div class="vertical-menux">
                                     <ul>
                                         <li><a href=""><i class="fas fa-download" aria-hidden="true"></i>
-                                            <span>Recover</span></a></li>
+                                            <span>HOME</span></a></li>
                                         <li><a href=""><i class="fas fa-upload" aria-hidden="true"></i>
-                                            <span>Swap</span></a></li>
+                                            <span>UPDATES</span></a></li>
                                         <li><a href=""><i class="fas fa-bullhorn" aria-hidden="true"></i>
-                                            <span>Referrals</span></a></li>
+                                            <span>REFERRALS</span></a></li>
                                         <li><a href=""><i class="fa fa-search" aria-hidden="true"></i>
-                                            <span>Explorer</span></a></li>
+                                            <span>EXPLORER</span></a></li>
+                                            <li><a href=""><i class="fa fa-search" aria-hidden="true"></i>
+                                                <span>SUBMIT BALANCE RECOVERY REQUEST</span></a></li>
                                         <li><a href=""><i class="fas fa-sign-in-alt" aria-hidden="true"></i>
-                                            <span>Logout</span></a></li>
+                                            <span>LOGOUT</span></a></li>
 
 
                                     </ul>
 
 
                             </div>
-
+                        </div>
 
 
 
