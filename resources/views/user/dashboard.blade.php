@@ -2,8 +2,8 @@
 <style>
 
     .sidenav {
-  height: 70%;
-  width: 400px;
+  height: 100%;
+  width: 600px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -203,7 +203,7 @@
                                 <button style="font-size:15px;cursor:pointer;right:0;float:right;background-color:#3d5acb;margin-left:20px;padding:8px;border-radius:10%;color:#fff;" onclick="openNav()">&#9776; MENU</button>
 
                                 <div id="mySidenav" class="sidenav text-center">
-                                    <a href="javascript(0)" class="closebtn" style="background-color:#3d5acb; border-radius:10%; padding: 8px; color:#fff;" onclick="closeNav()">&times;CLOSE</a>
+                                    <a href="javascript:void(0)" class="closebtn" style="background-color:#3d5acb; border-radius:10%; padding: 8px; color:#fff;" onclick="closeNav()">&times;CLOSE</a>
                                     <a href="#">HOME</a>
                                     <a href="#">UPDATES</a>
                                     <a href="#">REFERRALS</a>
