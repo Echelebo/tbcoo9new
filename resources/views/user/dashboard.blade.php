@@ -201,7 +201,7 @@
                             <div class="col-md-3 col-sm-3" style="padding-left: 20px">
                                 <h2><font color="#111010" size="4"><b>Hello, {{ user()->name }}</b><br />({{ user()->email }})</font></h2>
                                 <br />
-                                <select class="form-control form-control-lg" style="background: #fff">
+                                <select class="form-control form-control-lg" style="background: #fff;width:50%;">
                                     <option>Kringle</option>
                                     <option>TBC</option>
                                     <option>USD</option>
@@ -211,15 +211,15 @@
                                 </div><div class="col-md-3">
                                 </div>
                             <div class="col-md-6 py-4">
-                                <button style="font-size:15px;cursor:pointer;right:0;float:right;font-weight:bold;background-color:#3d5acb;margin-left:20px;padding:4px 8px;border-width:0;border-radius:10%;color:#fff;" onclick="openNav()">&#9776; MENU</button>
+                                <button style="font-size:15px;cursor:pointer;right:0;float:right;font-weight:bold;background-color:#3d5acb;margin-left:20px;padding:4px 8px;border-width:0;border-radius:3%;color:#fff;" onclick="openNav()">&#9776; MENU</button>
 
                                 <div id="mySidenav" class="sidenav text-center">
-                                    <a href="javascript:void(0)" class="closebtn" style="background-color:#3d5acb; border-radius:10%; border-width:0;padding:4px 8px; color:#fff;" onclick="closeNav()">&times; CLOSE</a>
+                                    <a href="javascript:void(0)" class="closebtn" style="background-color:#3d5acb; border-radius:3%; border-width:0;padding:4px 8px; color:#fff;" onclick="closeNav()">&times; CLOSE</a>
                                     <h2 class="mt-4" style="color: #111010; font-size: 30px;">Menu</h2>
                                     <p>{{ user()->email }}</p>
                                     <a href="#" class="mt-4"><i class="fa fa-home" aria-hidden="true"></i> HOME</a>
                                     <hr style="width: 80%; background-color:#dbdbdb; height:0.2px;  border-width:0; margin: auto; text-align:center;"/>
-                                    <a href="#" class="mt-2"><i class="fa-solid fa-bell" aria-hidden="true"></i> UPDATES</a>
+                                    <a href="#" class="mt-2"><i class="fa fa-bell" aria-hidden="true"></i> UPDATES</a>
                                     <hr style="width: 80%; background-color:#dbdbdb; height:0.2px;  border-width:0; margin: auto; text-align:center;"/>
                                     <a href="#" class="mt-2"><i class="fa fa-user-plus" aria-hidden="true"></i> REFERRALS</a>
                                     <hr style="width: 80%; background-color:#dbdbdb; height:0.2px;  border-width:0; margin: auto; text-align:center;"/>
@@ -242,10 +242,10 @@
                                 <p style="background-color:#ECEDF1; color: #1d1a1ad3; padding: 2px;"><font size="5">Wallet Address</font></p>
                                 <div class="row mt-4">
                                 <div class="col-6 text-center">
-                                    <a href="" class="btn btn-lg btn-primary bg-green-500" style="font-size:15px;cursor:pointer;font-weight:bold;border-width:0;width:80%;border-radius:10%;color:#fff;"> SEND </a>
+                                    <a href="" class="btn btn-lg btn-primary bg-green-500" style="font-size:15px;cursor:pointer;font-weight:bold;border-width:0;width:80%;border-radius:3%;color:#fff;"> SEND </a>
                                 </div>
                                 <div class="col-6 text-center">
-                                    <a href="" class="btn btn-lg btn-primary bg-green-500" style="font-size:15px;cursor:pointer;font-weight:bold;border-width:0;width:80%;border-radius:10%;color:#fff;"> EXCHANGE </a>
+                                    <a href="" class="btn btn-lg btn-primary bg-green-500" style="font-size:15px;cursor:pointer;font-weight:bold;border-width:0;width:80%;border-radius:3%;color:#fff;"> EXCHANGE </a>
                                 </div>
                             </div>
                             </div>
