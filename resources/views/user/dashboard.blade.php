@@ -218,7 +218,7 @@
                                 </div><div class="col-md-3">
                                 </div>
                             <div class="col-md-6 py-4">
-                                <button style="font-size:15px;cursor:pointer;right:0;float:right;font-weight:bold;background-color:#3d5acb;margin-left:20px;padding:4px 8px;border-width:0;border-radius:15px;color:#fff;" onclick="openNav()">&#9776; MENU</button>
+                                <button style="font-size:15px;cursor:pointer;right:0;float:right;font-weight:bold;background-color:#3d5acb;margin-left:20px;padding:4px 12px;border-width:0;border-radius:15px;color:#fff;" onclick="openNav()">&#9776; MENU</button>
 
                                 <div id="mySidenav" class="sidenav text-center">
                                     <a href="javascript:void(0)" class="closebtn" style="background-color:#3d5acb; border-radius:15px; border-width:0;padding:4px 8px; color:#fff;" onclick="closeNav()">&times; CLOSE</a>
@@ -264,8 +264,8 @@
 
                                     <p align="center"><font size="5" style="bold">Transactions</p>
                                     <br />
-                                    <div class="tranx-area" style="border-width:3px; border-radius:15px;">
-                                    <div class="row mt-4" >
+                                    <div class="tranx-area mt-4" style="border-width:3px; border-radius:15px;">
+                                    <div class="row" >
                                     <div class="col-2">
                                         <img src="/prime/assets/send.png" style="margin: auto; width:40px; height:40px;">
 
