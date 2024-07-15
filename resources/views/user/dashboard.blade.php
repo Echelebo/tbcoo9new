@@ -309,11 +309,11 @@ function closeNav() {
     $("#chooserate").change(function () {
             var selectedValue = $("#chooserate").val();
 
-            if (selectedValue == 'tbc' {
+            if (selectedValue == "tbc" {
                 $("#balancerate").text("24 TBC");
-            }else if (selectedValue == 'kringle') {
+            }else if (selectedValue == "kringle") {
                 $("#balancerate").text("47 Kringle");
-            }else if (selectedValue == 'usd') {
+            }else if (selectedValue == "usd") {
                 $("#balancerate").text("500 USD");
             }
         });
