@@ -41,12 +41,19 @@
     margin: auto;
     width:60%;
 }
+.trans-area {
+    margin: auto;
+    width:80%;
+}
 }
 
 @media screen and (max-height: 480px) {
   .sidenav {padding-top: 9px;}
   .sidenav a {font-size: 13px;}
   .wallet-area {
+    width:100%;
+}
+.trans-area {
     width:100%;
 }
 }
@@ -257,7 +264,7 @@
 
                                     <p align="center"><font size="5" style="bold">Transactions</p>
                                     <br />
-                                    <div class="row mt-4" style="border-width:3px; border-radius:15px;">
+                                    <div class="row trans-area mt-4" style="border-width:3px; border-radius:15px;">
                                     <div class="col-2">
                                         <img src="/prime/assets/send.png" style="margin: auto; width:40px; height:40px;">
 
