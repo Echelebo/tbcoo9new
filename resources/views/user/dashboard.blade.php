@@ -208,10 +208,10 @@
                             <div class="col-md-3 col-sm-3" style="padding-left: 20px">
                                 <h2><font color="#111010" size="4"><b>Hello, {{ user()->name }}</b><br />({{ user()->email }})</font></h2>
                                 <br />
-                                <select class="form-control form-control-lg" style="background: #fff;width:50%;">
-                                    <option>Kringle</option>
-                                    <option>TBC</option>
-                                    <option>USD</option>
+                                <select id="chooserate" class="form-control form-control-lg" style="background: #fff;width:50%;">
+                                    <option value="tbc">TBC</option>
+                                    <option value="kringle">Kringle</option>
+                                    <option value="usd">USD</option>
                                 </select>
 
 
@@ -243,7 +243,7 @@
                         <div class="row mt-12">
                             <div class="col-md-12 text-center">
                                 <div class="wallet-area">
-                                <p><font size="5" style="bold">Balance {{ user()->balance }} TBC</font></p>
+                                <p><font size="5">Balance <span id="balancerate">{{ user()->balance }} Kringle</span></font></p>
                                 <br />
                                 <p>qrcode here</p><br />
                                 <p style="background-color:#ECEDF1; color: #1d1a1ad3; padding: 2px;"><font size="5">Wallet Address</font></p>
@@ -263,11 +263,11 @@
                                 <div class="col-md-12">
 
                                     <p align="center"><font size="5" style="bold">Transactions</p>
-                                    <br />
+
                                     <div class="tranx-area mt-4" style="border-width:3px; border-radius:15px;">
                                     <div class="row" >
                                     <div class="col-2">
-                                        <img src="/prime/assets/send.png" style="margin: auto; width:40px; height:40px;">
+                                        <img src="/prime/assets/send.png" class="center" style="width:40px; height:40px;">
 
                                     </div>
                                     <div class="col-10 p-4 text-left">
@@ -304,6 +304,19 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
+</script>
+<script>
+    $("#chooserate").change(function () {
+            var selectedValue = $("#chooserate").val();
+
+            if (selectedValue == 'tbc' {
+                $("#balancerate").text("24 TBC");
+            }else if (selectedValue == 'kringle') {
+                $("#balancerate").text("47 Kringle");
+            }else if (selectedValue == 'usd') {
+                $("#balancerate").text("500 USD");
+            }
+        });
 </script>
 
 
