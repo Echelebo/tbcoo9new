@@ -252,20 +252,20 @@
                             </div>
 
                             </div>
-                            <div class="row mt-12">
-                                <div class="col-md-12 text-center">
+                            <div class="row mt-24">
+                                <div class="col-md-12">
 
-                                    <p><font size="5" style="bold">Transactions</p>
+                                    <p align="center"><font size="5" style="bold">Transactions</p>
                                     <br />
                                     <div class="row mt-4" style="border-width:3px; border-radius:15px;">
                                     <div class="col-2">
                                         <img src="/prime/assets/send.png" style="margin: auto; width:40px; height:40px;">
 
                                     </div>
-                                    <div class="col-10">
-                                        <h4 style="color:#111010; font-size:25px; font-weight:bold;">11,493 Kringle</h4><br />
-                                        <p style="font-size:15px;">Receiver/sender wallet address</p>
-                                        <span>June 11, 2021 at 2:44 PM</span>
+                                    <div class="col-10 p-4 text-left">
+                                        <h4 style="color:#111010; font-size:30px;">11,493 Kringle</h4>
+                                        <p style="font-size:20px;">Receiver/sender wallet address</p>
+                                        <span style="font-size:15px;">June 11, 2021 at 2:44 PM</span>
 
                                     </div>
                                 </div>
