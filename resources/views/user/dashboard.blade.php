@@ -241,10 +241,10 @@
                                 <p>qrcode here</p><br />
                                 <p style="background-color:#ECEDF1; color: #1d1a1ad3; padding: 2px;"><font size="5">Wallet Address</font></p>
                                 <div class="row mt-4">
-                                <div class="col-md-6 text-center">
+                                <div class="col-6 text-center">
                                     <a href="" class="btn btn-lg btn-primary bg-green-500" style="font-size:15px;cursor:pointer;font-weight:bold;border-width:0;padding:4px 16px;border-radius:10%;color:#fff;"> SEND </a>
                                 </div>
-                                <div class="col-md-6 text-center">
+                                <div class="col-6 text-center">
                                     <a href="" class="btn btn-lg btn-primary bg-green-500" style="font-size:15px;cursor:pointer;font-weight:bold;border-width:0;border-radius:10%;padding:4px 16px;color:#fff;"> EXCHANGE </a>
                                 </div>
                             </div>
