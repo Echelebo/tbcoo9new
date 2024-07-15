@@ -41,9 +41,9 @@
     margin: auto;
     width:60%;
 }
-.trans-area {
+.tranx-area {
     margin: auto;
-    width:80%;
+    width: 80%;
 }
 }
 
@@ -53,7 +53,7 @@
   .wallet-area {
     width:100%;
 }
-.trans-area {
+.tranx-area {
     width:100%;
 }
 }
@@ -218,10 +218,10 @@
                                 </div><div class="col-md-3">
                                 </div>
                             <div class="col-md-6 py-4">
-                                <button style="font-size:15px;cursor:pointer;right:0;float:right;font-weight:bold;background-color:#3d5acb;margin-left:20px;padding:4px 8px;border-width:0;border-radius:3%;color:#fff;" onclick="openNav()">&#9776; MENU</button>
+                                <button style="font-size:15px;cursor:pointer;right:0;float:right;font-weight:bold;background-color:#3d5acb;margin-left:20px;padding:4px 8px;border-width:0;border-radius:15px;color:#fff;" onclick="openNav()">&#9776; MENU</button>
 
                                 <div id="mySidenav" class="sidenav text-center">
-                                    <a href="javascript:void(0)" class="closebtn" style="background-color:#3d5acb; border-radius:3%; border-width:0;padding:4px 8px; color:#fff;" onclick="closeNav()">&times; CLOSE</a>
+                                    <a href="javascript:void(0)" class="closebtn" style="background-color:#3d5acb; border-radius:15px; border-width:0;padding:4px 8px; color:#fff;" onclick="closeNav()">&times; CLOSE</a>
                                     <h2 class="mt-4" style="color: #111010; font-size: 30px;">Menu</h2>
                                     <p>{{ user()->email }}</p>
                                     <a href="#" class="mt-4"><i class="fa fa-home" aria-hidden="true"></i> HOME</a>
@@ -249,10 +249,10 @@
                                 <p style="background-color:#ECEDF1; color: #1d1a1ad3; padding: 2px;"><font size="5">Wallet Address</font></p>
                                 <div class="row mt-4">
                                 <div class="col-6 text-center">
-                                    <a href="" class="btn btn-lg btn-primary bg-green-500" style="font-size:15px;cursor:pointer;font-weight:bold;border-width:0;width:80%;border-radius:3%;color:#fff;"> SEND </a>
+                                    <a href="" class="btn btn-lg btn-primary bg-green-500" style="font-size:15px;cursor:pointer;font-weight:bold;border-width:0;width:80%;border-radius:15px;color:#fff;"> SEND </a>
                                 </div>
                                 <div class="col-6 text-center">
-                                    <a href="" class="btn btn-lg btn-primary bg-green-500" style="font-size:15px;cursor:pointer;font-weight:bold;border-width:0;width:80%;border-radius:3%;color:#fff;"> EXCHANGE </a>
+                                    <a href="" class="btn btn-lg btn-primary bg-green-500" style="font-size:15px;cursor:pointer;font-weight:bold;border-width:0;width:80%;border-radius:15px;color:#fff;"> EXCHANGE </a>
                                 </div>
                             </div>
                             </div>
@@ -264,7 +264,8 @@
 
                                     <p align="center"><font size="5" style="bold">Transactions</p>
                                     <br />
-                                    <div class="row trans-area mt-4" style="border-width:3px; border-radius:15px;">
+                                    <div class="tranx-area" style="border-width:3px; border-radius:15px;">
+                                    <div class="row mt-4" >
                                     <div class="col-2">
                                         <img src="/prime/assets/send.png" style="margin: auto; width:40px; height:40px;">
 
