@@ -311,7 +311,7 @@ const outputElement = document.getElementById('balancerate');
 
 selectElement.addEventListener('change', function() {
   const selectedValue = this.value;
-  outputElement.textContent = ${selectedValue};
+  outputElement.textContent = "${selectedValue}";
 });
 </script>
 
