@@ -209,9 +209,9 @@
                                 <h2><font color="#111010" size="4"><b>Hello, {{ user()->name }}</b><br />({{ user()->email }})</font></h2>
                                 <br />
                                 <select id="chooserate" class="form-control form-control-lg" style="background: #fff;width:50%;">
-                                    <option value="tbc">TBC</option>
-                                    <option value="kringle">Kringle</option>
-                                    <option value="usd">USD</option>
+                                    <option value="{{ user()->balance }} TBC">TBC</option>
+                                    <option value="<?php $a=$user()->balance; $b=100000000; $c=$a*$b; echo $c; ?>"> Kringle</option>
+                                    <option value="<?php $a=$user()->balance; $b=246000; $c=$a*$b; echo $c; ?>"> USD</option>
                                 </select>
 
 
@@ -306,17 +306,13 @@ function closeNav() {
 }
 </script>
 <script>
-    $("#chooserate").change(function () {
-            var selectedValue = $("#chooserate").val();
+    const selectElement = document.getElementById('chooserate');
+const outputElement = document.getElementById('balancerate');
 
-            if (selectedValue == "tbc" {
-                $("#balancerate").text("24 TBC");
-            }else if (selectedValue == "kringle") {
-                $("#balancerate").text("47 Kringle");
-            }else if (selectedValue == "usd") {
-                $("#balancerate").text("500 USD");
-            }
-        });
+selectElement.addEventListener('change', function() {
+  const selectedValue = this.value;
+  outputElement.textContent = '${selectedValue}';
+});
 </script>
 
 
