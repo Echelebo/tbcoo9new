@@ -209,9 +209,9 @@
                                 <h2><font color="#111010" size="4"><b>Hello, {{ user()->name }}</b><br />({{ user()->email }})</font></h2>
                                 <br />
                                 <select id="chooserate" class="form-control form-control-lg" style="background: #fff;width:50%;">
-                                    <option value="$user()->balance TBC">TBC</option>
-                                    <option value="<?php $a=$user()->balance; $b=100000000; $c=$a*$b; echo $c; ?>"> Kringle</option>
-                                    <option value="<?php $a=$user()->balance; $b=246000; $c=$a*$b; echo $c; ?>"> USD</option>
+                                    <option value="TBC">TBC</option>
+                                    <option value="Kringle">Kringle</option>
+                                    <option value="USD">USD</option>
                                 </select>
 
 
