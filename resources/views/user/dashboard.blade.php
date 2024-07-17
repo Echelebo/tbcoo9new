@@ -309,7 +309,7 @@
                 {{csrf_field()}}
             <div class="modal-body">
 
-                <div class="input-group input-group-lg input-group-round mb-4">
+                <div class="input-group input-group-lg input-group-round mb-4 text-center">
                     <div class="input-group-inner" style="width: 80%;">
 
                         <input type="text" id="receiverwallet" name="receiverwallet" value=""
