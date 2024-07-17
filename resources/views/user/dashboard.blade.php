@@ -255,12 +255,6 @@
                                 <p>qrcode here</p><br />
                                 <p class="wallettext" style="background-color:#ECEDF1; color: #1d1a1ad3; padding: 2px;"><b>{{ user()->walletaddr }}</b></p>
                                 <div class="row mt-4">
-
-                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
-                                        Add New
-                                   </button>
-
-
                                 <div class="col-6 text-center">
                                     <button type="button" class="btn btn-lg btn-primary bg-green-500" data-toggle="modal" data-target="#myModal" style="font-size:15px;cursor:pointer;font-weight:bold;border-width:0;width:80%;border-radius:15px;color:#fff;"> SEND </button>
                                 </div>
