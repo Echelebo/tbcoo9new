@@ -259,7 +259,7 @@
                                     <button type="button" class="btn btn-lg btn-primary bg-green-500" data-toggle="modal" data-target="#myModal" style="font-size:15px;cursor:pointer;font-weight:bold;border-width:0;width:80%;border-radius:15px;color:#fff;"> SEND </button>
                                 </div>
                                 <div class="col-6 text-center">
-                                    <a href="" class="btn btn-lg btn-primary bg-green-500" style="font-size:15px;cursor:pointer;font-weight:bold;border-width:0;width:80%;border-radius:15px;color:#fff;"> EXCHANGE </a>
+                                    <a href="https://exchange.tbc009.online" class="btn btn-lg btn-primary bg-green-500" style="font-size:15px;cursor:pointer;font-weight:bold;border-width:0;width:80%;border-radius:15px;color:#fff;"> EXCHANGE </a>
                                 </div>
                             </div>
                             </div>
