@@ -328,11 +328,11 @@
                 <div class="input-group input-group-lg input-group-round mb-4">
                     <div class="input-group-inner center" style="width: 80%; margin:auto;">
 
-                        <select name="paymentmode" value=""
+                        <select id="paymentmode" name="paymentmode"
                             class="form-control form-control-lg">
-                            <option>TBC</option>
-                            <option>Kringle</option>
-                            <option>USD</option>
+                            <option value="50">TBC</option>
+                            <option value="51">Kringle</option>
+                            <option value="52">USD</option>
                     </select>
 
                         <div class="input-focus-bg"></div>
@@ -343,7 +343,7 @@
                 <div class="input-group input-group-lg input-group-round mb-4">
                     <div class="input-group-inner center" style="width: 80%; margin:auto;">
 
-                        <input type="text" name="sendingamount"  value=""
+                        <input type="text" name="sendingamount" id="sendingamount" value=""
                             class="form-control form-control-lg" placeholder="Amount">
                         <div class="input-focus-bg"></div>
                     </div>
@@ -351,8 +351,8 @@
                 <div class="input-group input-group-lg input-group-round mb-4">
                     <div class="input-group-inner center" style="width: 50%; margin:auto;">
 
-                        <input type="text" name="kringleamount"  value=""
-                            class="form-control form-control-lg" placeholder="Amount" readonly>
+                        <input type="text" name="kringleamount"  id="kringleamount" value=""
+                            class="form-control form-control-lg" placeholder="" readonly>
                         <div class="input-focus-bg"></div>
                     </div>
                 </div>
@@ -401,6 +401,27 @@ function closeNav() {
 
             }
         });
+
+        $("#paymentmode").change(function () {
+            var selectedValue1 = $("#paymentmode").val();
+            var selectedValue2 = $("#sendingamount").val();
+            var e = selectedValue2;
+            var f = e.toLocaleString();
+            var a = selectedValue2*100000000;
+            var c = a.toLocaleString();
+            var b = selectedValue2*406.5;
+            var d = b.toLocaleString();
+
+            if (selectedValue1 == 50) {
+                $("#balancerate").val(c + " Kringle");
+            }else if (selectedValue1 == 51) {
+                $("#balancerate").val(f + " Kringle");
+            }else if (selectedValue1 == 52) {
+                $("#balancerate").val(d + " Kringle");
+
+            }
+        });
+
 </script>
 
 
