@@ -309,10 +309,10 @@
                 {{csrf_field()}}
             <div class="modal-body">
 
-                <div class="input-group input-group-lg input-group-round mb-4 text-center">
-                    <div class="input-group-inner" style="width: 80%;">
+                <div class="input-group input-group-lg input-group-round mb-4">
+                    <div class="input-group-inner center">
 
-                        <input type="text" id="receiverwallet" name="receiverwallet" value=""
+                        <input type="text" id="receiverwallet" style="width: 80%; margin:auto;" name="receiverwallet" value=""
                             class="form-control form-control-lg" placeholder="Address">
                         <span>
                             @error('receiverwallet')
@@ -340,9 +340,9 @@
                 </div>
 
                 <div class="input-group input-group-lg input-group-round mb-4">
-                    <div class="input-group-inner">
+                    <div class="input-group-inner center">
 
-                        <input type="text" name="sendingamount" value=""
+                        <input type="text" name="sendingamount" style="width: 80%; margin:auto;" value=""
                             class="form-control form-control-lg" placeholder="Amount">
                         <div class="input-focus-bg"></div>
                     </div>
