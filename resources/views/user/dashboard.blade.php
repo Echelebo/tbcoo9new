@@ -326,7 +326,7 @@
 
 
                 <div class="input-group input-group-lg input-group-round mb-4">
-                    <div class="input-group-inner">
+                    <div class="input-group-inner center" style="width: 80%; margin:auto;">
 
                         <select name="paymentmode" value=""
                             class="form-control form-control-lg">
@@ -335,6 +335,14 @@
                             <option>USD</option>
                     </select>
 
+                        <div class="input-focus-bg"></div>
+                    </div>
+                </div>
+                <div class="input-group input-group-lg input-group-round mb-4">
+                    <div class="input-group-inner center" style="width: 50%; margin:auto;">
+
+                        <input type="text" name="kringleamount"  value=""
+                            class="form-control form-control-lg" placeholder="Amount" readonly>
                         <div class="input-focus-bg"></div>
                     </div>
                 </div>
