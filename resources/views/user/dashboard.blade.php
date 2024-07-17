@@ -308,16 +308,16 @@ function closeNav() {
 <script>
     $("#chooserate").change(function () {
             var selectedValue = $("#chooserate").val();
-            var userbal = "<?php user()->balance ?>";
+            var userbal = "<?php echo $user()->balance; ?>";
             var a = userbal*100000000;
             var b = userbal*246000;
 
             if (selectedValue == 40) {
-                $("#balancerate").text(userbal "TBC");
+                $("#balancerate").text(userbal);
             }else if (selectedValue == 41) {
-                $("#balancerate").text(a "Kringle");
+                $("#balancerate").text(a);
             }else if (selectedValue == 42) {
-                $("#balancerate").text(b "USD");
+                $("#balancerate").text(b);
 
             }
         });
