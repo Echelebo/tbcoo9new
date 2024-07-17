@@ -313,11 +313,11 @@ function closeNav() {
             var b = userbal*246000;
 
             if (selectedValue == 40) {
-                $("#balancerate").text(userbal);
+                $("#balancerate").text("userbal");
             }else if (selectedValue == 41) {
-                $("#balancerate").text(a);
+                $("#balancerate").text("a");
             }else if (selectedValue == 42) {
-                $("#balancerate").text(b);
+                $("#balancerate").text("b");
 
             }
         });
