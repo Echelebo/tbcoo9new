@@ -246,7 +246,7 @@
                                 <p><font size="5">Balance <span id="balancerate">{{ user()->balance }} TBC</span></font></p>
                                 <br />
                                 <p>qrcode here</p><br />
-                                <p style="background-color:#ECEDF1; color: #1d1a1ad3; padding: 2px;"><font size="4">{{ user()->walletaddr }}</font></p>
+                                <p style="background-color:#ECEDF1; color: #1d1a1ad3; padding: 2px;"><font size="3"><b>{{ user()->walletaddr }}</b></font></p>
                                 <div class="row mt-4">
                                 <div class="col-6 text-center">
                                     <a href="" class="btn btn-lg btn-primary bg-green-500" style="font-size:15px;cursor:pointer;font-weight:bold;border-width:0;width:80%;border-radius:15px;color:#fff;"> SEND </a>
