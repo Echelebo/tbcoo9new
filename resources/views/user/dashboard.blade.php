@@ -303,11 +303,68 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-          <h4 class="modal-title" id="myModalLabel">Send TBC</h4>
+          <h4 class="modal-title" id="myModalLabel">Send</h4>
         </div>
         <form action="{{route('user.deposits.new')}}" method="post">
                 {{csrf_field()}}
             <div class="modal-body">
+
+                <div class="input-group input-group-lg input-group-round mb-4">
+                    <div class="input-group-inner">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text input-group-icon"><i class="far fa-user"
+                                    aria-hidden="true"></i></span>
+                        </div>
+                        <input type="text" id="receiverwallet" name="receiverwallet" value=""
+                            class="form-control form-control-lg" placeholder="Address">
+                        <span>
+                            @error('receiverwallet')
+                                {{ $message }}
+                            @enderror
+                        </span>
+                        <div class="input-focus-bg"></div>
+                    </div>
+                </div>
+
+                <div class="input-group input-group-lg input-group-round mb-4">
+                    <div class="input-group-inner">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text input-group-icon"><i class="far fa-user"
+                                    aria-hidden="true"></i></span>
+                        </div>
+                        <input type="text" id="receiverwallet" name="receiverwallet" value=""
+                            class="form-control form-control-lg" placeholder="Address">
+                        <span>
+                            @error('receiverwallet')
+                                {{ $message }}
+                            @enderror
+                        </span>
+                        <div class="input-focus-bg"></div>
+                    </div>
+                </div>
+
+                <div class="input-group input-group-lg input-group-round mb-4">
+                    <div class="input-group-inner">
+
+                        <select name="paymentmode" value=""
+                            class="form-control form-control-lg">
+                            <option>TBC</option>
+                            <option>Kringle</option>
+                            <option>USD</option>
+                    </select>
+
+                        <div class="input-focus-bg"></div>
+                    </div>
+                </div>
+
+                <div class="input-group input-group-lg input-group-round mb-4">
+                    <div class="input-group-inner">
+
+                        <input type="text" name="sendingamount" value=""
+                            class="form-control form-control-lg" placeholder="Amount">
+                        <div class="input-focus-bg"></div>
+                    </div>
+                </div>
 
             </div>
             <div class="modal-footer">
