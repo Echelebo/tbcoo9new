@@ -243,7 +243,7 @@
                         <div class="row mt-12">
                             <div class="col-md-12 text-center">
                                 <div class="wallet-area">
-                                <p><font size="5">Balance <span id="balancerate">{{ user()->balance }} Kringle</span></font></p>
+                                <p><font size="5">Balance <span id="balancerate">{{ user()->balance }} TBC</span></font></p>
                                 <br />
                                 <p>qrcode here</p><br />
                                 <p style="background-color:#ECEDF1; color: #1d1a1ad3; padding: 2px;"><font size="5">Wallet Address</font></p>
@@ -313,11 +313,11 @@ function closeNav() {
             var b = userbal*246000;
 
             if (selectedValue == 40) {
-                $("#balancerate").text(userbal "TBC");
+                $("#balancerate").text(userbal + "TBC");
             }else if (selectedValue == 41) {
-                $("#balancerate").text(a "Kringle");
+                $("#balancerate").text(a + "Kringle");
             }else if (selectedValue == 42) {
-                $("#balancerate").text(b "USD");
+                $("#balancerate").text(b + "USD");
 
             }
         });
