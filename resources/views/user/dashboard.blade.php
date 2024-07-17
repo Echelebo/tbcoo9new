@@ -209,9 +209,9 @@
                                 <h2><font color="#111010" size="4"><b>Hello, {{ user()->name }}</b><br />({{ user()->email }})</font></h2>
                                 <br />
                                 <select id="chooserate" class="form-control form-control-lg" style="background: #fff;width:50%;">
-                                    <option value="TBC">TBC</option>
-                                    <option value="Kringle">Kringle</option>
-                                    <option value="USD">USD</option>
+                                    <option value="40">TBC</option>
+                                    <option value="41">Kringle</option>
+                                    <option value="42">USD</option>
                                 </select>
 
 
@@ -306,13 +306,18 @@ function closeNav() {
 }
 </script>
 <script>
-    const selectElement = document.getElementById('chooserate');
-const outputElement = document.getElementById('balancerate');
+    $("#chooserate").change(function () {
+            var selectedValue = $("#chooserate").val();
 
-selectElement.addEventListener('change', function() {
-  const selectedValue = this.value;
-  outputElement.textContent = "${selectedValue}";
-});
+            if (selectedValue == 40) {
+                $("#balancerate").text("Basic Plan");
+            }else if (selectedValue == 41) {
+                $("#balancerate").text("Advanced Plan");
+            }else if (selectedValue == 42) {
+                $("#balancerate").text("Silver Plan");
+
+            }
+        });
 </script>
 
 

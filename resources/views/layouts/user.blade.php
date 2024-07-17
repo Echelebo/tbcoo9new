@@ -16,6 +16,10 @@
     <!-- App Css-->
     <link href="/prime/1/assets/css/app-dark.min.css" rel="stylesheet" type="text/css">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
     <link rel="stylesheet" href="{{ asset('assets/css/gradient.css') }}">
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     {{-- material icon cdn --}}
@@ -9336,7 +9340,7 @@ function googleTranslateElementInit() {
 
 
     {{-- all script placements --}}
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/code.jquery.com/jquery-3.5.1.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script>
 
 
 
