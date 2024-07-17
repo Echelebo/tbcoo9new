@@ -308,7 +308,7 @@ function closeNav() {
 <script>
     $("#chooserate").change(function () {
             var selectedValue = $("#chooserate").val();
-            var userbal = "<?php echo {{user()->balance}}; ?>";
+            var userbal = "<?php echo user()->balance; ?>";
             var a = userbal*100000000;
             var b = userbal*246000;
 
