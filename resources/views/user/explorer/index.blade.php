@@ -226,13 +226,13 @@
                                     <p>{{ user()->email }}</p>
                                     <a href="{{ route('user.dashboard') }}" class="mt-4"><i class="fa fa-home" aria-hidden="true"></i> HOME</a>
                                     <hr style="width: 80%; background-color:#dbdbdb; height:0.2px;  border-width:0; margin: auto; text-align:center;"/>
-                                    <a href="{{ route('user.updates') }}" class="mt-2"><i class="fa fa-bell" aria-hidden="true"></i> UPDATES</a>
+                                    <a href="{{ route('user.deposits.index') }}" class="mt-2"><i class="fa fa-bell" aria-hidden="true"></i> UPDATES</a>
                                     <hr style="width: 80%; background-color:#dbdbdb; height:0.2px;  border-width:0; margin: auto; text-align:center;"/>
                                     <a href="{{ route('user.referrals') }}" class="mt-2"><i class="fa fa-user-plus" aria-hidden="true"></i> REFERRALS</a>
                                     <hr style="width: 80%; background-color:#dbdbdb; height:0.2px;  border-width:0; margin: auto; text-align:center;"/>
-                                    <a href="{{ route('user.explorer') }}" class="mt-2"><i class="fa fa-search"></i> EXPLORER</a>
+                                    <a href="#" class="mt-2"><i class="fa fa-search"></i> EXPLORER</a>
                                     <hr style="width: 80%; background-color:#dbdbdb; height:0.2px; border-width:0; margin: auto; text-align:center;"/>
-                                    <a href="{{ route('user.recovery') }}" class="mt-2"><i class="fa fa-paper-plane" aria-hidden="true"></i> SUBMIT BALANCE RECOVERY REQUEST</a>
+                                    <a href="#" class="mt-2"><i class="fa fa-paper-plane" aria-hidden="true"></i> SUBMIT BALANCE RECOVERY REQUEST</a>
                                     <hr style="width: 80%; background-color:#dbdbdb; height:0.2px; border-width:0; margin: auto; text-align:center;"/>
                                     <a class="mt-2 logout">"><i class="fa fa-sign-out"></i> LOGOUT</a>
                                     <hr style="width: 80%; background-color:#dbdbdb; height:0.2px; border-width:0;margin: auto; text-align:center;"/>

@@ -24,6 +24,9 @@ use App\Http\Controllers\User\DashboardController;
 use App\Http\Controllers\User\DepositController;
 use App\Http\Controllers\User\KycController;
 use App\Http\Controllers\User\P2pController;
+use App\Http\Controllers\User\ExplorerController;
+use App\Http\Controllers\User\UpdatesController;
+use App\Http\Controllers\User\RecoveryController;
 use App\Http\Controllers\User\ReferralController;
 use App\Http\Controllers\User\TransactionController;
 use App\Http\Controllers\User\WithdrawalController;
@@ -93,6 +96,27 @@ Route::name('user.')->group(function () {
                     Route::get('/history', [DepositController::class, 'history'])->name('history');
                     Route::post('/screenshot', [DepositController::class, 'newScreenshot'])->name('screenshot');
                 });
+
+                Route::prefix('updates')->name('updates.')->group(function () {
+                    Route::get('/', [UpdatesController::class, 'index'])->name('index');
+                    Route::post('/', [UpdatesController::class, 'newUpdates'])->name('new')
+                    Route::get('/history', [UpdatesController::class, 'history'])->name('history');
+                    Route::post('/screenshot', [UpdatesController::class, 'newScreenshot'])->name('screenshot');
+                });
+
+                Route::prefix('recovery')->name('recovery.')->group(function () {
+                    Route::get('/', [RecoveryController::class, 'index'])->name('index');
+                    Route::post('/', [RecoveryController::class, 'newRecovery'])->name('new')
+                    Route::get('/history', [RecoveryController::class, 'history'])->name('history');
+                });
+
+                Route::prefix('explorer')->name('explorer.')->group(function () {
+                    Route::get('/', [ExplorerController::class, 'index'])->name('index');
+                    Route::get('/trxdetails', [ExplorerController::class, 'trxdetails'])->name('trxdetails');
+
+                });
+
+
 
                 //withdrawal route
                 Route::prefix('withdrawals')->name('withdrawals.')->group(function () {
