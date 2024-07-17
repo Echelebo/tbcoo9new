@@ -308,13 +308,16 @@ function closeNav() {
 <script>
     $("#chooserate").change(function () {
             var selectedValue = $("#chooserate").val();
+            var userbal = "<?php {{ user()->balance }}?>";
+            var a = userbal*100000000;
+            var b = userbal*246000;
 
             if (selectedValue == 40) {
-                $("#balancerate").text("56 TBC");
+                $("#balancerate").text(userbal "TBC");
             }else if (selectedValue == 41) {
-                $("#balancerate").text("56655778 Kringle");
+                $("#balancerate").text(a "Kringle");
             }else if (selectedValue == 42) {
-                $("#balancerate").text("34344334 USD");
+                $("#balancerate").text(b "USD");
 
             }
         });
