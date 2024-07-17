@@ -37,7 +37,7 @@
 }
 
 .wallettext {
-    font-size:15px;
+    font-size:18px;
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1605px) {
