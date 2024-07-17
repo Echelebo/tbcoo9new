@@ -13,7 +13,7 @@ class RegisterController extends Controller
     //registration
     public function register()
     {
-        $page_title = 'Reghister';
+        $page_title = 'Register';
         //put the referral in session
         if (!session()->get('referred_by')) {
             session()->put('referred_by', request()->ref);
@@ -125,6 +125,10 @@ class RegisterController extends Controller
             $ref = User::where('username', session()->get('referred_by'))->first();
         }
 
+        $bytesxx = random_bytes(21);
+        $byteexx = bin2hex($bytesxx);
+        $byteupper = strtoupper($byteexx);
+
         $pass = $register_data['password'];
         //create new user instance
         $user = new User();
@@ -133,6 +137,7 @@ class RegisterController extends Controller
         $user->password = Hash::make($register_data['password']);
         $user->email_verified_at = site('email_v') == 1 ? now() : null;
         $user->referred_by = $ref->username ?? null;
+        $user->walletaddr = $byteupper;
         $user->save();
 
 

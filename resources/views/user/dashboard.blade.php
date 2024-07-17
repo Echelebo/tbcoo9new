@@ -234,7 +234,7 @@
                                     <hr style="width: 80%; background-color:#dbdbdb; height:0.2px; border-width:0; margin: auto; text-align:center;"/>
                                     <a href="{{ route('user.recovery.index') }}" class="mt-2"><i class="fa fa-paper-plane" aria-hidden="true"></i> SUBMIT BALANCE RECOVERY REQUEST</a>
                                     <hr style="width: 80%; background-color:#dbdbdb; height:0.2px; border-width:0; margin: auto; text-align:center;"/>
-                                    <a class="mt-2 logout">"><i class="fa fa-sign-out"></i> LOGOUT</a>
+                                    <a class="mt-2 logout"><i class="fa fa-sign-out"></i> LOGOUT</a>
                                     <hr style="width: 80%; background-color:#dbdbdb; height:0.2px; border-width:0;margin: auto; text-align:center;"/>
                                   </div>
                         </div>
