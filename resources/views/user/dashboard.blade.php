@@ -310,7 +310,7 @@ function closeNav() {
             var selectedValue = $("#chooserate").val();
 
             if (selectedValue == "40") {
-                $("#balancerate").text("<?php echo"$user()->balance"?> TBC");
+                $("#balancerate").text("<?php echo $user()->balance;?> TBC");
             }else if (selectedValue == "41") {
                 $("#balancerate").text("<?php $a = $user()->balance*100000000; echo $a; ?> Kringle");
             }else if (selectedValue == "42") {
