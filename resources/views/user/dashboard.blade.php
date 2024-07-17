@@ -310,11 +310,8 @@
             <div class="modal-body">
 
                 <div class="input-group input-group-lg input-group-round mb-4">
-                    <div class="input-group-inner">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text input-group-icon"><i class="far fa-user"
-                                    aria-hidden="true"></i></span>
-                        </div>
+                    <div class="input-group-inner" style="width: 80%;">
+
                         <input type="text" id="receiverwallet" name="receiverwallet" value=""
                             class="form-control form-control-lg" placeholder="Address">
                         <span>
@@ -326,22 +323,7 @@
                     </div>
                 </div>
 
-                <div class="input-group input-group-lg input-group-round mb-4">
-                    <div class="input-group-inner">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text input-group-icon"><i class="far fa-user"
-                                    aria-hidden="true"></i></span>
-                        </div>
-                        <input type="text" id="receiverwallet" name="receiverwallet" value=""
-                            class="form-control form-control-lg" placeholder="Address">
-                        <span>
-                            @error('receiverwallet')
-                                {{ $message }}
-                            @enderror
-                        </span>
-                        <div class="input-focus-bg"></div>
-                    </div>
-                </div>
+
 
                 <div class="input-group input-group-lg input-group-round mb-4">
                     <div class="input-group-inner">
