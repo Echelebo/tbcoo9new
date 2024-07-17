@@ -309,15 +309,18 @@ function closeNav() {
     $("#chooserate").change(function () {
             var selectedValue = $("#chooserate").val();
             var userbal = "<?php echo user()->balance; ?>";
+            var e = userbal.toLocaleString();
             var a = userbal*100000000;
+            var c = a.toLocaleString();
             var b = userbal*246000;
+            var d = b.toLocaleString();
 
             if (selectedValue == 40) {
-                $("#balancerate").text(userbal + "TBC");
+                $("#balancerate").text(e + " TBC");
             }else if (selectedValue == 41) {
-                $("#balancerate").text(a + "Kringle");
+                $("#balancerate").text(c + " Kringle");
             }else if (selectedValue == 42) {
-                $("#balancerate").text(b + "USD");
+                $("#balancerate").text(d + " USD");
 
             }
         });
