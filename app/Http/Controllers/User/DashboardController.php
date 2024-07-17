@@ -5,6 +5,7 @@ namespace App\Http\Controllers\User;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
+use App\Models\User;
 
 class DashboardController extends Controller
 {
@@ -118,25 +119,28 @@ class DashboardController extends Controller
             ->with('depositCoin')
             ->orderBy('id', 'DESC')
             ->paginate(site('pagination'));
-            
-            
+
+
         $total_withdrawals = user()->withdrawals()
         ->sum('amount');
-        
+
         $pending_withdrawals = user()->withdrawals()
             ->where('status', 'pending')
             ->sum('amount');
-        
+
         $last_deposit = user()->botActivations()->orderBy('id', 'desc')->first();
-        
+
         $last_withdrawals = user()->withdrawals()->orderBy('id', 'desc')->first();
-    
-            
+
+        $user = User()->id;
+
+
         return view('user.dashboard', compact(
             'page_title',
             'todays_deposits',
             'percentage_deposit_increase',
             'capital',
+            'user',
             'capitalx',
             'profit_fig',
             'last_deposit',
