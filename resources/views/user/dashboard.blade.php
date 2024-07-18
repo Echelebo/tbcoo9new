@@ -359,7 +359,7 @@
 
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-default bg-green-500" data-dismiss="modal">Close</button>
               <button type="submit" class="btn btn-primary bg-green-500">Save</button>
             </div>
         </form>
@@ -398,26 +398,6 @@ function closeNav() {
                 $("#balancerate").text(c + " Kringle");
             }else if (selectedValue == 42) {
                 $("#balancerate").text(d + " USD");
-
-            }
-        });
-
-        $("#paymentmode").change(function () {
-            var selectedValue1 = $("#paymentmode").val();
-            var selectedValue2 = $("#sendingamount").val();
-            var e = selectedValue2;
-            var f = e.toLocaleString();
-            var a = selectedValue2*100000000;
-            var c = a.toLocaleString();
-            var b = selectedValue2*406.5;
-            var d = b.toLocaleString();
-
-            if (selectedValue1 == 50) {
-                $("#balancerate").val(c + " Kringle");
-            }else if (selectedValue1 == 51) {
-                $("#balancerate").val(f + " Kringle");
-            }else if (selectedValue1 == 52) {
-                $("#balancerate").val(d + " Kringle");
 
             }
         });
