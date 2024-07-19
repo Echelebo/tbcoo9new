@@ -361,7 +361,7 @@
 
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-default bg-green-500" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-default text-white bg-green-500" data-dismiss="modal">Close</button>
               <button type="submit" class="btn btn-primary bg-green-500">Save</button>
             </div>
         </form>
@@ -384,6 +384,16 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+<script>
+    function myFunction() {
+    var x = document.getElementById("sendingamount");
+    x.value = x.value;
+
+    var y = document.getElementById("kringleamount");
+    y.value = x.value;
+
+    }
+    </script>
 <script>
     $("#chooserate").change(function () {
             var selectedValue = $("#chooserate").val();
