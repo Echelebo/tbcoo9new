@@ -253,7 +253,7 @@
                                 <p><font size="5">Balance <span id="balancerate">{{ user()->balance }} TBC</span></font></p>
                                 <br />
                                 <div class="w-full flex justify-center items-center mb-2">
-                                    <div id="wallet_qrcode" class="clipboard" data-copy=""></div>
+                                    <img src="/prime/images/qrcode.png" width="200px" height="150px" />
                                 </div><br />
                                 <p class="wallettext" style="background-color:#ECEDF1; color: #1d1a1ad3; padding: 2px;"><b>{{ user()->walletaddr }}</b></p>
                                 <div class="row mt-4">
